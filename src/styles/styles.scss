@@ -1,0 +1,154 @@
+/*Variables*/
+$linkHoverColor: orangered;
+$linkFooterColor: $linkHoverColor;
+$sectionPadding: 48px 0px;
+$hrPadding: 48px 0px 32px;
+
+/*Animations*/
+section {
+    &#intro, &#tech-skills, &#experience div, &#edu, &#footer {
+    opacity: 0;
+    transform: translateY(30px);
+    /* Use a standard time-based duration as a fallback */
+    animation: fade-in linear both;
+    /* Link to its own visibility in the viewport */
+    animation-timeline: view();
+    /* CRITICAL: Tell the animation to finish early while entering. This prevents it from 'reversing' when you scroll past it. */
+    animation-range: entry 10% entry 40%;
+    }
+    &#intro, &#tech-skills {
+    animation: fade-in 1s ease-out forwards;
+    animation-timeline: auto; /* Uses standard clock time, not scroll */
+    }
+}
+@media (min-width: 1024px) {
+  /* The second section waits 0.3s before starting its fade */
+    section {
+        &#tech-skills {
+        animation-delay: 0.3s;
+        }
+    }
+}
+@keyframes fade-in {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*Styling*/
+body {
+    margin: 0px;
+    padding: 0px;
+    header {
+        div {
+            padding: 64px 0px 32px;
+            width: 80%;
+            margin: 0 auto;
+            a {
+                width: 50%;
+                display: inline-block;
+                &.smk {
+                    font-size: 2.5em;
+                    font-weight: bold;
+                    &~ a {
+                        text-align: right;
+                    }
+                }
+                &:hover {
+                    color: $linkHoverColor;
+                }
+            }
+        }
+    }
+    main {
+        &.mdx-layout {
+            background-color: #eee;
+        }
+        .hero {
+            background: #ddd url('../images/cover-photo.jpeg');
+            background-size: cover;
+            height: 350px;
+            /*width: 80%;*/
+            margin: 0px auto;
+            .innerHero {
+                display: block;
+                width: 80%;
+                margin: 0px auto;
+                h1 {
+                    color: #fff;
+                    font-size: 2.5em;
+                    font-weight: bold;
+                    padding-top: 15rem;
+                    text-shadow: 0px 5px 4px orangered;
+                }
+            }
+            img {
+                border-radius: 25px;
+                height: 350px;
+                width: 1400px;
+                margin: 0 auto;
+            }
+        }
+        h2 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 24px;
+        }
+        h3 {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-bottom: 18px;
+        }
+        h5 {
+            font-size: 1em;
+            font-weight: bold;
+            margin-top: 24px;
+            &+ p {
+                line-height: 1.7rem;
+            }
+        }
+        p {
+            width: 80%;
+            span {
+                text-decoration: underline;
+            }
+            &+ ul {
+                margin-top: 12px;
+            }
+        }
+        hr {
+            margin: $hrPadding;
+        }
+        ul {
+            list-style:circle;
+            width: 80%;
+            li {
+                margin-left: 20px;
+                line-height: 1.7rem;
+                span {
+                    text-decoration: underline;
+                }
+            }
+        }
+        /*Homepage style*/
+        .content, .mdx {
+            padding: $sectionPadding;
+            width: 80%;
+            margin: 0px auto;
+        }
+        /* end homepage styles*/
+    }
+    footer {
+        background: #000;
+        margin: 0px auto;
+        section {
+            padding: $sectionPadding;
+            width: 80%;
+            margin: 0px auto;
+            a {
+                color: $linkFooterColor;
+            }
+        }
+    }
+}

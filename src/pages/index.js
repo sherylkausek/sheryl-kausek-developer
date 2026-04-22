@@ -1,178 +1,140 @@
-import * as React from "react"
+// Step 1: Import React
+import * as React from 'react'
+import SiteFooter from '../components/footer'
+import '../styles/styles.css'
 
-const pageStyles = {
-  color: "#232129",
-  padding: 96,
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
-const headingAccentStyles = {
-  color: "#663399",
-}
-const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
-const listStyles = {
-  marginBottom: 96,
-  paddingLeft: 0,
-}
-const listItemStyles = {
-  fontWeight: 300,
-  fontSize: 24,
-  maxWidth: 560,
-  marginBottom: 30,
-}
-
-const linkStyle = {
-  color: "#8954A8",
-  fontWeight: "bold",
-  fontSize: 16,
-  verticalAlign: "5%",
-}
-
-const docLinkStyle = {
-  ...linkStyle,
-  listStyleType: "none",
-  marginBottom: 24,
-}
-
-const descriptionStyle = {
-  color: "#232129",
-  fontSize: 14,
-  marginTop: 10,
-  marginBottom: 0,
-  lineHeight: 1.25,
-}
-
-const docLink = {
-  text: "Documentation",
-  url: "https://www.gatsbyjs.com/docs/",
-  color: "#8954A8",
-}
-
-const badgeStyle = {
-  color: "#fff",
-  backgroundColor: "#088413",
-  border: "1px solid #088413",
-  fontSize: 11,
-  fontWeight: "bold",
-  letterSpacing: 1,
-  borderRadius: 4,
-  padding: "4px 6px",
-  display: "inline-block",
-  position: "relative",
-  top: -2,
-  marginLeft: 10,
-  lineHeight: 1,
-}
-
-const links = [
-  {
-    text: "Tutorial",
-    url: "https://www.gatsbyjs.com/docs/tutorial/getting-started/",
-    description:
-      "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
-    color: "#E95800",
-  },
-  {
-    text: "How to Guides",
-    url: "https://www.gatsbyjs.com/docs/how-to/",
-    description:
-      "Practical step-by-step guides to help you achieve a specific goal. Most useful when you're trying to get something done.",
-    color: "#1099A8",
-  },
-  {
-    text: "Reference Guides",
-    url: "https://www.gatsbyjs.com/docs/reference/",
-    description:
-      "Nitty-gritty technical descriptions of how Gatsby works. Most useful when you need detailed information about Gatsby's APIs.",
-    color: "#BC027F",
-  },
-  {
-    text: "Conceptual Guides",
-    url: "https://www.gatsbyjs.com/docs/conceptual/",
-    description:
-      "Big-picture explanations of higher-level Gatsby concepts. Most useful for building understanding of a particular topic.",
-    color: "#0D96F2",
-  },
-  {
-    text: "Plugin Library",
-    url: "https://www.gatsbyjs.com/plugins",
-    description:
-      "Add functionality and customize your Gatsby site or app with thousands of plugins built by our amazing developer community.",
-    color: "#8EB814",
-  },
-  {
-    text: "Build and Host",
-    url: "https://www.gatsbyjs.com/cloud",
-    badge: true,
-    description:
-      "Now you’re ready to show the world! Give your Gatsby site superpowers: Build and host on Netlify. Get started for free!",
-    color: "#663399",
-  },
-]
-
+// Step 2: Define your component
 const IndexPage = () => {
   return (
-    <main style={pageStyles}>
-      <h1 style={headingStyles}>
-        Congratulations
-        <br />
-        <span style={headingAccentStyles}>
-          — you just made a Gatsby site! 🎉🎉🎉
-        </span>
-      </h1>
-      <p style={paragraphStyles}>
-        Edit <code style={codeStyles}>src/pages/index.js</code> to see this page
-        update in real-time. 😎
-      </p>
-      <ul style={listStyles}>
-        <li style={docLinkStyle}>
-          <a
-            style={linkStyle}
-            href={`${docLink.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter`}
-          >
-            {docLink.text}
-          </a>
-        </li>
-        {links.map(link => (
-          <li key={link.url} style={{ ...listItemStyles, color: link.color }}>
-            <span>
-              <a
-                style={linkStyle}
-                href={`${link.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter`}
-              >
-                {link.text}
-              </a>
-              {link.badge && (
-                <span style={badgeStyle} aria-label="New Badge">
-                  NEW!
-                </span>
-              )}
-              <p style={descriptionStyle}>{link.description}</p>
-            </span>
-          </li>
-        ))}
-      </ul>
-      <img
-        alt="Gatsby G Logo"
-        src="data:image/svg+xml,%3Csvg width='24' height='24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 2a10 10 0 110 20 10 10 0 010-20zm0 2c-3.73 0-6.86 2.55-7.75 6L14 19.75c3.45-.89 6-4.02 6-7.75h-5.25v1.5h3.45a6.37 6.37 0 01-3.89 4.44L6.06 9.69C7 7.31 9.3 5.63 12 5.63c2.13 0 4 1.04 5.18 2.65l1.23-1.06A7.959 7.959 0 0012 4zm-8 8a8 8 0 008 8c.04 0 .09 0-8-8z' fill='%23639'/%3E%3C/svg%3E"
-      />
+    <>
+    <main>
+      <div class="hero">
+        <section class="innerHero">
+        <h1>Sheryl Morgan Kausek</h1>
+        </section>
+      </div>
+
+      <div class="content">
+        <section id="intro">
+          <h2>Front-End Developer & Squad Lead</h2>
+          <p>13+ years delivering high-impact web solutions within the IBM ecosystem. Developed enterprise web pages and navigation components through multiple approaches: CMS platforms (AEM, Drupal, custom), MDX within Gatsby, and hand-coded HTML, CSS, and JavaScript. Trusted release authority and technical mentor, streamlining team workflows with modern tooling, including AI-assisted processes.</p>
+        </section>
+
+        <hr/>
+
+        <section id="tech-skills">
+          <h3>Technology skills</h3>
+          <ul>
+            <li><span>Front-end:</span> HTML5, CSS3, responsive design, JavaScript (ES6+)</li>
+            <li><span>Frameworks &amp; Libraries:</span> React, Bootstrap, Gatsby, MDX, jQuery</li>
+            <li><span>Content Platforms:</span> Adobe Experience Manager (AEM), Drupal, WordPress</li>
+            <li><span>Tools &amp; Workflow:</span> Git, GitHub, Docker, CI/CD, Figma</li>
+            <li><span>Practices:</span> Agile/Scrum, Design Systems, Technical Mentorship, AI-assisted workflows</li>
+          </ul>
+        </section>
+
+        <hr/>
+        <div>
+          <h2>CV</h2>
+        </div>
+
+        <section id="experience">
+          <div>
+            <h3>Professional experience</h3>
+          </div>
+          <div>
+            <h5>Software Engineer (Contract via Infinite Computer Solutions)</h5>
+            <p><em>Feb 2023 – Mar 2026 | New York, NY</em></p>
+            <p>
+                <span>IBM:</span> Led a squad responsible for the ongoing development of an inherited documentation platform used across various IBM.com teams; optimized site structure, navigability, and health of its enterprise codebase.
+            </p>
+            <ul>
+              <li><strong>Coordinated the team-wide restructuring</strong> of 200+ MDX-integrated pages, contributing hands-on to a substantial portion while guiding squad progress and ensuring file, directory, and path updates maintained site health.  </li>
+              <li><strong>Led the squad-level creation of a comprehensive AEM component library rebuild</strong> serving as technical documentation for custom components; personally built about 40% of the pages, coordinated with team members, and ensured consistent adherence to enterprise design system standards.  </li>
+              <li><strong>Empowered non-technical stakeholders</strong> by teaching Git workflows (forking, branching, and MDX editing), reducing team bottlenecks and enabling contributions.  </li>
+              <li><strong>Maintained high code quality</strong> as part of a two-person senior review team, managing final <strong>Pull Request (PR) approvals</strong> and production release cycles.  </li>
+              <li><strong>Facilitated Agile delivery</strong> by driving sprint planning in Jira and backlog grooming for my squad; leveraged <strong>Copilot</strong> to draft detailed user stories and technical requirements, ensuring on-time delivery of documentation milestones.</li>
+            </ul>
+          </div>
+
+          <div>
+            <h5>Web Content Manager/Developer (Contract via Morningview Technologies Inc)</h5>
+            <p><em>Jul 2012 – Feb 2023 | New York, NY</em></p>
+            <p>
+              <span>IBM:</span> Developed and maintained internal and external IBM web properties across four platform generations (Custom CMS, WCM, Drupal 8, and AEM), ensuring high-traffic sites met enterprise front-end and accessibility standards.
+            </p>
+            <ul>
+              <li><strong>Served as Discipline Lead for the Hybrid Cloud production pool</strong>, mentoring developers and resolving challenging technical issues.  </li>
+              <li><strong>Chaired bi-monthly developer calls</strong>, managing agendas and documentation to standardize procedures and share technical insights across cross-functional production teams.  </li>
+              <li><strong>Collaborated with the PMO to track developer progress</strong>, identifying new feature requirements and opening work tickets to align engineering output with project milestones.  </li>
+              <li>Ported legacy sites and migrated existing content into new enterprise systems while maintaining <strong>content integrity, SEO performance, and brand consistency</strong>.</li>
+            </ul>
+          </div>
+
+          <div>
+            <h5>Senior Web Designer/Developer</h5>
+            <p><em>Jul 2008 – Mar 2012 | New York, NY</em></p>
+            <p>
+              <span>LicenseStream:</span> Led UI development and front-end design for an ASP.NET-based licensing platform.
+            </p>
+            <ul>
+              <li><strong>Engineered interactive interfaces</strong> using XHTML, HTML5, and jQuery and built production-ready assets for <strong>ASP.NET backend integration</strong>.  </li>
+              <li><strong>Implemented modular CSS architectures</strong> using <strong>LESS</strong> and CSS3 frameworks to ensure site scalability.  </li>
+              <li><strong>Optimized web multimedia</strong> and managed cross-browser testing in an Agile environment.</li>
+            </ul>
+          </div>
+
+          <div>
+            <h5>XHTML/CSS Web Designer</h5>
+            <p>
+              <em>Mar 2008 – Jun 2008 | New York, NY</em><br/>
+              <span>Pere Partnership:</span> Partnered with designers/developers to translate PHP mockups into pixel-perfect XHTML/CSS and refactored legacy code for performance.
+            </p>
+          </div>
+
+          <div>
+            <h5>Consultant (Contractual)</h5>
+            <p>
+              <em>Nov 2007 – Mar 2008 | New York, NY</em><br/>
+              <span>WebMD:</span> Built pixel-perfect promo sites and HTML emails from Photoshop using XHTML, CSS, and JS; integrated third-party Flash assets and performed extensive QA.
+            </p>
+          </div>
+
+          <div>
+            <h5>Associate Producer</h5>
+            <p>
+              <em>Sep 2006 – Nov 2007 | New York, NY</em><br/>
+              <span>WebMD:</span> Produced promotional sites using XHTML/CSS and Photoshop; developed a RegEx-based code library to streamline team workflows and managed CMS publishing.
+            </p>
+          </div>
+
+        </section>
+
+        <hr/>
+
+        <section id="edu">
+          <h3>Education</h3>
+          <p>
+            <strong>SUNY Purchase</strong> | B.A. in New Media | Purchase, NY
+          </p>
+          <p>
+            <strong>High School of Art & Design</strong> | Illustration | New York, NY
+          </p>
+        </section>
+      </div>
     </main>
+    <SiteFooter />
+    </>
   )
 }
 
-export default IndexPage
+// You'll learn about this in the next task, just copy it for now
+export const Head = () => (
+  <>
+    <title>Sheryl Morgan Kausek | Front-end Web Dev</title>
+    <meta name="description" content="Sheryl Morgan Kausek is a NYC based front-end web developer." />
+  </>
+)
 
-export const Head = () => <title>Home Page</title>
+// Step 3: Export your component
+export default IndexPage

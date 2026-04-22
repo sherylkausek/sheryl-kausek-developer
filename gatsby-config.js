@@ -4,9 +4,9 @@
 module.exports = {
   siteMetadata: {
     title: `Sheryl Kausek | Developer`,
-    siteUrl: `https://www.yourdomain.tld`
+    siteUrl: `https://sheryl.kausek.com`
   },
-  plugins: ["gatsby-plugin-postcss", "gatsby-plugin-image", "gatsby-plugin-sitemap", "gatsby-plugin-mdx", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
+  plugins: ["gatsby-plugin-postcss", "gatsby-plugin-image", "gatsby-plugin-sitemap", "gatsby-plugin-mdx", "gatsby-plugin-sharp", "gatsby-transformer-sharp", "gatsby-plugin-layout", "gatsby-plugin-react-helmet", {
     resolve: 'gatsby-source-filesystem',
     options: {
       "name": "images",
@@ -20,5 +20,5 @@ module.exports = {
       "path": "./src/pages/"
     },
     __key: "pages"
-  }]
+  },],
 };

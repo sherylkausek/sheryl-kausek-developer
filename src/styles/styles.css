@@ -1,0 +1,145 @@
+/*Variables*/
+/*Animations*/
+section#intro, section#tech-skills, section#experience div, section#edu, section#footer {
+  opacity: 0;
+  transform: translateY(30px);
+  /* Use a standard time-based duration as a fallback */
+  animation: fade-in linear both;
+  /* Link to its own visibility in the viewport */
+  animation-timeline: view();
+  /* CRITICAL: Tell the animation to finish early while entering. This prevents it from 'reversing' when you scroll past it. */
+  animation-range: entry 10% entry 40%;
+}
+section#intro, section#tech-skills {
+  animation: fade-in 1s ease-out forwards;
+  animation-timeline: auto; /* Uses standard clock time, not scroll */
+}
+
+@media (min-width: 1024px) {
+  /* The second section waits 0.3s before starting its fade */
+  section#tech-skills {
+    animation-delay: 0.3s;
+  }
+}
+@keyframes fade-in {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/*Styling*/
+body {
+  margin: 0px;
+  padding: 0px;
+}
+body header div {
+  padding: 64px 0px 32px;
+  width: 80%;
+  margin: 0 auto;
+}
+body header div a {
+  width: 50%;
+  display: inline-block;
+}
+body header div a.smk {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+body header div a.smk ~ a {
+  text-align: right;
+}
+body header div a:hover {
+  color: orangered;
+}
+body main.mdx-layout {
+  background-color: #eee;
+}
+body main .hero {
+  background: #ddd url("../images/cover-photo.jpeg");
+  background-size: cover;
+  height: 350px;
+  /*width: 80%;*/
+  margin: 0px auto;
+}
+body main .hero .innerHero {
+  display: block;
+  width: 80%;
+  margin: 0px auto;
+}
+body main .hero .innerHero h1 {
+  color: #fff;
+  font-size: 2.5em;
+  font-weight: bold;
+  padding-top: 15rem;
+  text-shadow: 0px 5px 4px orangered;
+}
+body main .hero img {
+  border-radius: 25px;
+  height: 350px;
+  width: 1400px;
+  margin: 0 auto;
+}
+body main h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+body main h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+body main h5 {
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: 24px;
+}
+body main h5 + p {
+  line-height: 1.7rem;
+}
+body main p {
+  width: 80%;
+}
+body main p span {
+  text-decoration: underline;
+}
+body main p + ul {
+  margin-top: 12px;
+}
+body main hr {
+  margin: 48px 0px 32px;
+}
+body main ul {
+  list-style: circle;
+  width: 80%;
+}
+body main ul li {
+  margin-left: 20px;
+  line-height: 1.7rem;
+}
+body main ul li span {
+  text-decoration: underline;
+}
+body main {
+  /*Homepage style*/
+}
+body main .content, body main .mdx {
+  padding: 48px 0px;
+  width: 80%;
+  margin: 0px auto;
+}
+body main {
+  /* end homepage styles*/
+}
+body footer {
+  background: #000;
+  margin: 0px auto;
+}
+body footer section {
+  padding: 48px 0px;
+  width: 80%;
+  margin: 0px auto;
+}
+body footer section a {
+  color: orangered;
+}/*# sourceMappingURL=styles.css.map */
