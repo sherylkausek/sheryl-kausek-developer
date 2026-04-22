@@ -21,6 +21,13 @@ section#intro, section#tech-skills {
     animation-delay: 0.3s;
   }
 }
+@media (max-width: 600px) {
+  /*Responsive animation*/
+  section#tech-skills {
+    animation: fade-in linear both;
+    animation-timeline: view();
+  }
+}
 @keyframes fade-in {
   to {
     opacity: 1;
@@ -142,4 +149,14 @@ body footer section {
 }
 body footer section a {
   color: orangered;
+}
+
+@media (max-width: 600px) {
+  /*Responsive styling*/
+  body main .hero .innerHero h1 {
+    padding-top: 10rem;
+  }
+  body main p, body main ul {
+    width: 100%;
+  }
 }/*# sourceMappingURL=styles.css.map */

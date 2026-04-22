@@ -1,4 +1,4 @@
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/kausekco/public_html/
+    - export DEPLOYPATH=/sheryl.kausek.com/kauskeco/public/
     - /bin/cp -R public/* $DEPLOYPATH
