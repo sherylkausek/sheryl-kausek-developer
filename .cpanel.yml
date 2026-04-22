@@ -1,0 +1,4 @@
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/kausekco/public_html/
+    - /bin/cp -R public/* $DEPLOYPATH
