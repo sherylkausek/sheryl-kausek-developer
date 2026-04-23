@@ -1,37 +1,76 @@
 /*Variables*/
 /*Animations*/
-section#intro, section#tech-skills, section#experience div, section#edu, section#footer {
-  opacity: 0;
-  transform: translateY(30px);
-  /* Use a standard time-based duration as a fallback */
-  animation: fade-in linear both;
-  /* Link to its own visibility in the viewport */
-  animation-timeline: view();
-  /* CRITICAL: Tell the animation to finish early while entering. This prevents it from 'reversing' when you scroll past it. */
-  animation-range: entry 10% entry 40%;
-}
-section#intro, section#tech-skills {
-  animation: fade-in 1s ease-out forwards;
-  animation-timeline: auto; /* Uses standard clock time, not scroll */
-}
-
-@media (min-width: 1024px) {
-  /* The second section waits 0.3s before starting its fade */
-  section#tech-skills {
-    animation-delay: 0.3s;
-  }
-}
-@media (max-width: 600px) {
-  /*Responsive animation*/
-  section#tech-skills {
-    animation: fade-in linear both;
-    animation-timeline: view();
-  }
-}
+/* 1. Keyframes for the transition */
 @keyframes fade-in {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+/* 2. Base State & Safari Fallback */
+section#intro,
+section#tech-skills,
+section#experience div,
+section#edu,
+section#footer {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fade-in 2.5s ease-out forwards;
+}
+
+/* 3. Staggered Delays for Experience Items */
+/* This loop targets each div inside #experience and adds a 0.2s 
+   incremental delay so they cascade down the page on load[cite: 49]. */
+section#experience div:nth-child(1) {
+  animation-delay: 3.5s;
+}
+
+section#experience div:nth-child(2) {
+  animation-delay: 7s;
+}
+
+section#experience div:nth-child(3) {
+  animation-delay: 10.5s;
+}
+
+section#experience div:nth-child(4) {
+  animation-delay: 14s;
+}
+
+section#experience div:nth-child(5) {
+  animation-delay: 17.5s;
+}
+
+section#experience div:nth-child(6) {
+  animation-delay: 21s;
+}
+
+section#experience div:nth-child(7) {
+  animation-delay: 24.5s;
+}
+
+/* Delay for sections following the experience block */
+section#edu {
+  animation-delay: 4.2s;
+}
+
+section#tech-skills {
+  animation-delay: 0.4s;
+}
+
+section#footer {
+  animation-delay: 4.6s;
+}
+
+/* 4. Chrome/Edge Scroll-Driven Override */
+@supports (animation-timeline: view()) {
+  section#experience div,
+  section#edu,
+  section#footer {
+    animation: fade-in linear both;
+    animation-timeline: view();
+    animation-range: entry 10% entry 40%;
+    animation-delay: 0s;
   }
 }
 /*Styling*/
@@ -99,7 +138,7 @@ body main h3 {
 body main h5 {
   font-size: 1em;
   font-weight: bold;
-  margin-top: 24px;
+  margin-top: 32px;
 }
 body main h5 + p {
   line-height: 1.7rem;
@@ -141,14 +180,69 @@ body main {
 body footer {
   background: #000;
   margin: 0px auto;
+  overflow: hidden;
 }
 body footer section {
   padding: 48px 0px;
   width: 80%;
   margin: 0px auto;
 }
-body footer section a {
+body footer section button {
+  background: transparent;
+  border: 2px solid orangered;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1em;
+  font-weight: bold;
   color: orangered;
+  transition: all 0.3s ease;
+}
+body footer section button:hover {
+  background: orangered;
+  color: #fff;
+  cursor: pointer;
+}
+body footer section button:active {
+  background: orangered;
+  color: #fff;
+  transform: rotate(15deg);
+}
+body footer section .contact-me {
+  max-height: 0;
+  overflow: hidden;
+  transform: translateY(10px);
+  opacity: 0;
+  visibility: hidden;
+  transition: max-height 0.6s ease-in-out, transform 0.6s ease-in-out, opacity 0.4s ease-in-out;
+}
+body footer section .contact-me form {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  min-width: 320px;
+  max-width: 50%;
+}
+body footer section .contact-me form input, body footer section .contact-me form textarea, body footer section .contact-me form select {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #222;
+  border-radius: 5px;
+  font-size: 1em;
+  background-color: #eee;
+}
+body footer section .contact-me form select {
+  color: #777;
+}
+body footer section .contact-me form button {
+  align-self: center;
+  margin-top: 1em;
+}
+body footer.active section .contact-me {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
 }
 
 @media (max-width: 600px) {
