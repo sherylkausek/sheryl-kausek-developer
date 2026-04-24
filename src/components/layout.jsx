@@ -1,6 +1,5 @@
 import React from 'react'
 import SiteFooter from './footer'
-import '../styles/styles.css'
 
 // Frontmatter is tucked inside pageContext
 export default function Layout({ children, pageContext }) {

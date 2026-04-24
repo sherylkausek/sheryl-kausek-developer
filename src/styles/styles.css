@@ -1,6 +1,6 @@
 /*Variables*/
 /*Animations*/
-section#intro, section#tech-skills, section#experience div, section#edu, section#footer {
+section#intro, section#intro + hr, section#tech-skills, section#tech-skills + hr, section#tech-skills + hr + div, section#experience div, section#edu, section#edu + hr, section#footer {
   opacity: 0;
   transform: translateY(30px);
   /* Use a standard time-based duration as a fallback */
@@ -75,10 +75,10 @@ body main .hero .innerHero {
 }
 body main .hero .innerHero h1 {
   color: #fff;
-  font-size: 2.5em;
+  font-size: 2.75em;
   font-weight: bold;
   padding-top: 15rem;
-  text-shadow: 0px 5px 4px orangered;
+  text-shadow: 2px 3px 5px orangered;
 }
 body main .hero img {
   border-radius: 25px;
@@ -137,6 +137,24 @@ body main .content, body main .mdx {
 }
 body main {
   /* end homepage styles*/
+}
+body main section#intro {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+body main section#intro .profile-pic {
+  border-radius: 2.5%;
+  width: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 0;
+  flex: 0 1 250px;
+}
+body main section#intro .info-wrapper {
+  flex: 1 1 500px;
+  padding: 0 0 0 2.5em;
 }
 body footer {
   background: #000;
@@ -215,5 +233,11 @@ body footer.active section .contact-me {
   }
   body main p, body main ul {
     width: 100%;
+  }
+  body main section#intro .profile-pic {
+    margin-bottom: 2em;
+  }
+  body main section#intro .info-wrapper {
+    padding: 0;
   }
 }/*# sourceMappingURL=styles.css.map */

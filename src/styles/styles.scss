@@ -6,7 +6,15 @@ $hrPadding: 48px 0px 32px;
 
 /*Animations*/
 section {
-    &#intro, &#tech-skills, &#experience div, &#edu, &#footer {
+    &#intro,
+    &#intro + hr,
+    &#tech-skills,
+    &#tech-skills + hr,
+    &#tech-skills + hr + div,
+    &#experience div,
+    &#edu,
+    &#edu + hr,
+    &#footer {
     opacity: 0;
     transform: translateY(30px);
     /* Use a standard time-based duration as a fallback */
@@ -16,7 +24,8 @@ section {
     /* CRITICAL: Tell the animation to finish early while entering. This prevents it from 'reversing' when you scroll past it. */
     animation-range: entry 10% entry 40%;
     }
-    &#intro, &#tech-skills {
+    &#intro, 
+    &#tech-skills {
     animation: fade-in 1s ease-out forwards;
     animation-timeline: auto; /* Uses standard clock time, not scroll */
     }
@@ -87,10 +96,10 @@ body {
                 margin: 0px auto;
                 h1 {
                     color: #fff;
-                    font-size: 2.5em;
+                    font-size: 2.75em;
                     font-weight: bold;
                     padding-top: 15rem;
-                    text-shadow: 0px 5px 4px orangered;
+                    text-shadow: 2px 3px 5px $linkHoverColor;
                 }
             }
             img {
@@ -148,6 +157,23 @@ body {
             margin: 0px auto;
         }
         /* end homepage styles*/
+        section#intro {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            .profile-pic {
+                border-radius: 2.5%;
+                width: 250px;
+                object-fit: cover;
+                margin-bottom: 0;
+                flex: 0 1 250px;
+            }
+            .info-wrapper {
+                flex: 1 1 500px;
+                padding: 0 0 0 2.5em;  
+            }
+        }
     }
     footer {
         background: #000;
@@ -236,6 +262,14 @@ body {
             }
             p, ul {
                 width: 100%;
+            }
+            section#intro {
+                .profile-pic {
+                    margin-bottom: 2em;
+                }
+                .info-wrapper {
+                    padding: 0;  
+                }
             }
         }
     }

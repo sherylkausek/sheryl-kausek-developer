@@ -1,7 +1,7 @@
 // Step 1: Import React
 import * as React from 'react'
 import SiteFooter from '../components/footer'
-import '../styles/styles.css'
+import profileImg from '../images/smk-profile.png'
 
 // Step 2: Define your component
 function IndexPage() {
@@ -16,8 +16,11 @@ function IndexPage() {
 
         <div class="content">
           <section id="intro">
-            <h2>Front-End Developer & Squad Lead</h2>
-            <p>13+ years delivering high-impact web solutions within the IBM ecosystem. Developed enterprise web pages and navigation components through multiple approaches: CMS platforms (AEM, Drupal, custom), MDX within Gatsby, and hand-coded HTML, CSS, and JavaScript. Trusted release authority and technical mentor, streamlining team workflows with modern tooling, including AI-assisted processes.</p>
+            <img src={profileImg} alt="Sheryl Morgan Kausek" class="profile-pic" />
+            <div class="info-wrapper">
+              <h2>Front-End Developer & Squad Lead</h2>
+              <p>Front-end developer with 13+ years delivering high-impact web solutions within the IBM ecosystem. Built and maintained enterprise web pages across AEM, Drupal, custom CMS, and MDX-driven Gatsby sites, alongside hand-coded HTML, CSS, and JavaScript. Trusted release authority and technical mentor, streamlining workflows and improving team efficiency through modern tooling and AI-assisted processes.</p>
+            </div>
           </section>
 
           <hr />
