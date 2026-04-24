@@ -6,7 +6,7 @@ export default function Header() {
     <header className="header">
         <div>
         <Link to="/" className="smk">Sheryl Morgan Kausek</Link>
-        <a href="mailto:sheryl.morgan@kausek.com">Contact me</a>
+        <a href="https://www.linkedin.com/in/sheryl-morgan-kausek/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </div>
     </header>
   )
