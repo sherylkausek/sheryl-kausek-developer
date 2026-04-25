@@ -28,11 +28,11 @@ function IndexPage() {
           <section id="tech-skills">
             <h3>Technology skills</h3>
             <ul>
-              <li><span>Front-end:</span> HTML5, CSS3, responsive design, JavaScript (ES6+)</li>
-              <li><span>Frameworks &amp; Libraries:</span> React, Bootstrap, Gatsby, MDX, jQuery</li>
-              <li><span>Content Platforms:</span> Adobe Experience Manager (AEM), Drupal, WordPress</li>
-              <li><span>Tools &amp; Workflow:</span> Git, GitHub, Docker, CI/CD, Figma</li>
-              <li><span>Practices:</span> Agile/Scrum, Design Systems, Technical Mentorship, AI-assisted workflows</li>
+              <li><span>Front-end:</span> HTML5, CSS3, SCSS, Responsive design, JavaScript (ES6+)</li>
+              <li><span>Frameworks &amp; Libraries:</span> React, Bootstrap, Gatsby, MDX</li>
+              <li><span>Content Platforms:</span> WordPress (theming, full-site builds); AEM, Drupal (authoring)</li>
+              <li><span>Tools &amp; Workflows:</span> Git, GitHub, Docker, CI/CD (GitHub Actions), Figma</li>
+              <li><span>Practices:</span> Agile/Scrum, Design Systems, Technical Mentorship, AI-Assisted Workflows</li>
             </ul>
           </section>
 
