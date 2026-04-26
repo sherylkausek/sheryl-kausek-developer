@@ -49,7 +49,7 @@ export default function SiteFooter() {
   }, []);
 
   return (
-    <footer className="header">
+    <footer>
         <section id="footer">
           <button className="footerContact">Contact me</button>
           <div className="contact-me">
