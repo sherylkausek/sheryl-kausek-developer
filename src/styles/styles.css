@@ -14,6 +14,16 @@ section#intro, section#tech-skills {
   animation: fade-in 1s ease-out forwards;
   animation-timeline: auto; /* Uses standard clock time, not scroll */
 }
+section#tech-skills .section-container {
+  display: flex;
+  flex-direction: row;
+}
+section#tech-skills .section-container .two-cols {
+  width: 50%;
+}
+section#tech-skills .section-container .two-cols ul {
+  width: 93%;
+}
 
 @media (min-width: 1024px) {
   /* The second section waits 0.3s before starting its fade */
@@ -24,8 +34,9 @@ section#intro, section#tech-skills {
 @media (max-width: 600px) {
   /*Responsive animation*/
   section#tech-skills {
-    animation: fade-in linear both;
+    animation: fade-in linear both !important;
     animation-timeline: view();
+    animation-delay: 0s;
   }
 }
 @keyframes fade-in {
@@ -65,7 +76,6 @@ body main .hero {
   background: #ddd url("../images/cover-photo.jpeg");
   background-size: cover;
   height: 350px;
-  /*width: 80%;*/
   margin: 0px auto;
 }
 body main .hero .innerHero {
@@ -114,15 +124,16 @@ body main p + ul {
   margin-top: 12px;
 }
 body main hr {
-  margin: 48px 0px 32px;
+  margin: 0em 3em 0em 2em;
 }
 body main ul {
   list-style: circle;
   width: 80%;
 }
 body main ul li {
-  margin-left: 20px;
-  line-height: 1.7rem;
+  margin-left: 1.2em;
+  margin-bottom: 0.5em;
+  /*line-height: 1.5em;*/
 }
 body main ul li span {
   text-decoration: underline;
@@ -130,21 +141,18 @@ body main ul li span {
 body main {
   /*Homepage style*/
 }
-body main .content, body main .mdx {
-  padding: 48px 0px;
+body main .content section .section-container {
+  padding: 3.5em 0em 4.075em;
   width: 80%;
   margin: 0px auto;
 }
-body main {
-  /* end homepage styles*/
-}
-body main section#intro {
+body main section#intro .section-container {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
-body main section#intro .profile-pic {
+body main section#intro .section-container .profile-pic {
   border-radius: 2.5%;
   width: 250px;
   -o-object-fit: cover;
@@ -152,9 +160,21 @@ body main section#intro .profile-pic {
   margin-bottom: 0;
   flex: 0 1 250px;
 }
-body main section#intro .info-wrapper {
+body main section#intro .section-container .info-wrapper {
   flex: 1 1 500px;
   padding: 0 0 0 2.5em;
+}
+body main section#tech-skills,
+body main section#edu {
+  background-color: #eee;
+}
+body main {
+  /* end homepage styles*/
+}
+body main .mdx {
+  padding: 3.5em 0em 4.075em;
+  width: 80%;
+  margin: 0px auto;
 }
 body footer {
   background: #000;
@@ -162,7 +182,7 @@ body footer {
   overflow: hidden;
 }
 body footer section {
-  padding: 48px 0px;
+  padding: 3.5em 0em 4.075em;
   width: 80%;
   margin: 0px auto;
 }
@@ -228,16 +248,53 @@ body footer.active section .contact-me {
 
 @media (max-width: 600px) {
   /*Responsive styling*/
+  body {
+    font-size: 1.2em;
+    line-height: 1.75em;
+  }
   body main .hero .innerHero h1 {
     padding-top: 10rem;
   }
-  body main p, body main ul {
+  body main p {
+    width: 100%;
+    margin-bottom: 1em;
+    line-height: 1.75em !important;
+  }
+  body main ul {
     width: 100%;
   }
-  body main section#intro .profile-pic {
+  body main ul li {
+    margin-bottom: 1em;
+  }
+  body main .content section .section-container {
+    padding: 2.5em 0em 1.5em;
+    width: 90%;
+    margin: 0px auto;
+  }
+  body main section#intro .section-container {
+    display: block;
+  }
+  body main section#intro .section-container .profile-pic {
     margin-bottom: 2em;
   }
-  body main section#intro .info-wrapper {
+  body main section#intro .section-container .info-wrapper {
+    display: block;
     padding: 0;
+  }
+  body main section#tech-skills {
+    display: block;
+  }
+  body main section#tech-skills .section-container {
+    display: block;
+  }
+  body main section#tech-skills .section-container .two-cols {
+    width: 100%;
+  }
+  body main section#tech-skills .section-container .two-cols ul {
+    width: 100%;
+  }
+  body main section#tech-skills .two-cols {
+    width: 100%;
+    padding: 1em 0em 2em;
   }
 }/*# sourceMappingURL=styles.css.map */

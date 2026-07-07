@@ -1,8 +1,10 @@
 /*Variables*/
 $linkHoverColor: orangered;
 $linkFooterColor: $linkHoverColor;
-$sectionPadding: 48px 0px;
-$hrPadding: 48px 0px 32px;
+$sectionPadding: 3.5em 0em 4.075em;
+$mobileSectionPadding: 2.5em 0em 1.5em;
+$hrPadding: 0em 3em 0em 2em;
+$sectionAltBg: #eee;
 
 /*Animations*/
 section {
@@ -29,6 +31,16 @@ section {
     animation: fade-in 1s ease-out forwards;
     animation-timeline: auto; /* Uses standard clock time, not scroll */
     }
+    &#tech-skills .section-container {
+        display: flex;
+        flex-direction:row;
+        .two-cols { 
+            width: 50%;
+            ul {
+                width: 93%;
+            }
+        }
+    }
 }
 @media (min-width: 1024px) {
     /* The second section waits 0.3s before starting its fade */
@@ -42,8 +54,9 @@ section {
     /*Responsive animation*/
     section {
         &#tech-skills {
-            animation: fade-in linear both;
+            animation: fade-in linear both !important;
             animation-timeline: view();
+            animation-delay: 0s;
         }
     }
 }
@@ -88,7 +101,6 @@ body {
             background: #ddd url('../images/cover-photo.jpeg');
             background-size: cover;
             height: 350px;
-            /*width: 80%;*/
             margin: 0px auto;
             .innerHero {
                 display: block;
@@ -143,36 +155,50 @@ body {
             list-style:circle;
             width: 80%;
             li {
-                margin-left: 20px;
-                line-height: 1.7rem;
+                margin-left: 1.2em;
+                margin-bottom: 0.5em;
+                /*line-height: 1.5em;*/
                 span {
                     text-decoration: underline;
                 }
             }
         }
         /*Homepage style*/
-        .content, .mdx {
+        .content section {
+            .section-container {
+                padding: $sectionPadding;
+                width: 80%;
+                margin: 0px auto;
+            }
+        }
+        section#intro {
+            .section-container {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-between;
+                .profile-pic {
+                    border-radius: 2.5%;
+                    width: 250px;
+                    object-fit: cover;
+                    margin-bottom: 0;
+                    flex: 0 1 250px;
+                }
+                .info-wrapper {
+                    flex: 1 1 500px;
+                    padding: 0 0 0 2.5em;  
+                }
+            }
+        }
+        section#tech-skills, 
+        section#edu {
+            background-color: $sectionAltBg;
+        }
+        /* end homepage styles*/
+        .mdx {
             padding: $sectionPadding;
             width: 80%;
             margin: 0px auto;
-        }
-        /* end homepage styles*/
-        section#intro {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: space-between;
-            .profile-pic {
-                border-radius: 2.5%;
-                width: 250px;
-                object-fit: cover;
-                margin-bottom: 0;
-                flex: 0 1 250px;
-            }
-            .info-wrapper {
-                flex: 1 1 500px;
-                padding: 0 0 0 2.5em;  
-            }
         }
     }
     footer {
@@ -252,6 +278,8 @@ body {
 @media (max-width: 600px) {
     /*Responsive styling*/
     body {
+        font-size: 1.2em;
+        line-height: 1.75em;
         main {
             .hero {
                 .innerHero {
@@ -260,15 +288,50 @@ body {
                     }
                 }
             }
-            p, ul {
+            p {
                 width: 100%;
+                margin-bottom: 1em;
+                line-height: 1.75em !important;
+            }
+            ul {
+                width: 100%;
+                li {
+                    margin-bottom: 1em;
+                }
+            }
+            .content section {
+                .section-container {
+                    padding: $mobileSectionPadding;
+                    width: 90%;
+                    margin: 0px auto;
+                }
             }
             section#intro {
-                .profile-pic {
-                    margin-bottom: 2em;
+                .section-container {
+                    display: block;
+                    .profile-pic {
+                        margin-bottom: 2em;
+                    }
+                    .info-wrapper {
+                        display: block;
+                        padding: 0;  
+                    }
                 }
-                .info-wrapper {
-                    padding: 0;  
+            }
+            section#tech-skills {
+                display: block;
+                .section-container {
+                    display: block;
+                    .two-cols {
+                        width: 100%;
+                        ul {
+                            width: 100%;
+                        }
+                    }
+                }
+                .two-cols {
+                    width: 100%;
+                    padding: 1em 0em 2em;
                 }
             }
         }
