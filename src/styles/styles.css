@@ -79,16 +79,121 @@ body main .hero {
   margin: 0px auto;
 }
 body main .hero .innerHero {
-  display: block;
+  /*display: block;*/
   width: 80%;
   margin: 0px auto;
+  position: relative;
+  padding: 2em;
+  height: 100vh;
+  overflow: hidden;
+  scroll-snap-align: center;
+}
+body main .hero .innerHero:before {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 350px;
+  top: 0;
+  left: 0;
+  background: radial-gradient(rgba(0, 0, 0, 0.3), transparent);
+  opacity: 0;
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+body main .hero .innerHero:hover:before {
+  opacity: 0.5;
+}
+body main .hero .innerHero .mobile-menu {
+  display: none;
 }
 body main .hero .innerHero h1 {
   color: #fff;
   font-size: 2.75em;
   font-weight: bold;
-  padding-top: 15rem;
+  /*padding-top: 15rem;*/
   text-shadow: 2px 3px 5px orangered;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 15rem;
+  margin-top: -30px;
+  transition: 0.5s ease;
+  z-index: 0;
+  letter-spacing: auto;
+}
+body main .hero .innerHero .hover {
+  z-index: 1;
+  height: 50px;
+  width: 140px;
+  position: absolute;
+}
+body main .hero .innerHero .hover + .hover-1 {
+  top: 12rem;
+  left: 1rem;
+  margin-top: -10px;
+}
+body main .hero .innerHero .hover + .hover-2 {
+  top: 12rem;
+  left: 0rem;
+}
+body main .hero .innerHero .hover + .hover-3 {
+  top: 12rem;
+  left: 9rem;
+}
+body main .hero .innerHero .hover + .hover-4 {
+  top: 12rem;
+  left: 18rem;
+}
+body main .hero .innerHero .hover + .hover-5 {
+  top: 12rem;
+  left: 27rem;
+}
+body main .hero .innerHero .hover + .hover-6 {
+  top: 17rem;
+  left: 0rem;
+}
+body main .hero .innerHero .hover + .hover-7 {
+  top: 17rem;
+  left: 9rem;
+}
+body main .hero .innerHero .hover + .hover-8 {
+  top: 17rem;
+  left: 18rem;
+}
+body main .hero .innerHero .hover + .hover-9 {
+  top: 17rem;
+  left: 27rem;
+}
+body main .hero .innerHero .hover-1:hover ~ h1 {
+  left: 30px;
+  margin-top: -10px;
+}
+body main .hero .innerHero .hover-2:hover ~ h1 {
+  left: 30px;
+  margin-top: -10px;
+}
+body main .hero .innerHero .hover-3:hover ~ h1 {
+  margin-top: -30px;
+}
+body main .hero .innerHero .hover-4:hover ~ h1 {
+  left: 50px;
+  margin-top: -50px;
+}
+body main .hero .innerHero .hover-6:hover ~ h1 {
+  left: 20px;
+  margin-top: 10px;
+}
+body main .hero .innerHero .hover-7:hover ~ h1 {
+  left: 40px;
+  margin-top: 30px;
+}
+body main .hero .innerHero .hover-8:hover ~ h1 {
+  left: 60px;
+  margin-top: -50px;
+}
+body main .hero .innerHero .hover-9:hover ~ h1 {
+  left: 30px;
+  margin-top: -80px;
 }
 body main .hero img {
   border-radius: 25px;
@@ -166,7 +271,7 @@ body main section#intro .section-container .info-wrapper {
 }
 body main section#tech-skills,
 body main section#edu {
-  background-color: #eee;
+  background-color: #f6f6f6;
 }
 body main {
   /* end homepage styles*/
@@ -252,8 +357,90 @@ body footer.active section .contact-me {
     font-size: 1.2em;
     line-height: 1.75em;
   }
+  body main #menuItems {
+    display: block;
+    width: 100%;
+    height: 25vh;
+    background-color: #000;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    padding: 1em;
+    transition: display 0.4s ease;
+    transition-behavior: allow-discrete;
+  }
+  body main #menuItems span {
+    text-align: right;
+    display: block;
+    font-size: 1.5em;
+  }
+  body main #menuItems span:hover, body main #menuItems span:active {
+    cursor: pointer;
+  }
+  body main #menuItems ul {
+    width: 100%;
+  }
+  body main #menuItems ul li {
+    margin-bottom: 1em;
+  }
+  body main .hero .innerHero .mobile-menu {
+    display: block;
+    position: fixed;
+    top: 1rem;
+    right: 1em;
+    z-index: 2;
+    background-color: #000;
+  }
+  body main .hero .innerHero .mobile-menu svg {
+    width: 32px;
+    height: 32px;
+  }
+  body main .hero .innerHero .mobile-menu svg:hover, body main .hero .innerHero .mobile-menu svg:active {
+    cursor: pointer;
+    /*path {
+        stroke: #ccc !important;
+    }*/
+  }
+  body main .hero .innerHero .mobile-menu svg {
+    /*path {
+        transition: stroke 0.2s ease;
+    }*/
+  }
   body main .hero .innerHero h1 {
-    padding-top: 10rem;
+    line-height: 1.1em;
+    margin-top: -90px;
+  }
+  body main .hero .innerHero .hover-1:hover ~ h1 {
+    margin-top: -100px;
+  }
+  body main .hero .innerHero .hover-2:hover ~ h1 {
+    margin-top: -100px;
+  }
+  body main .hero .innerHero .hover-3:hover ~ h1 {
+    margin-top: -120px;
+  }
+  body main .hero .innerHero .hover-4:hover ~ h1 {
+    margin-top: -150px;
+  }
+  body main .hero .innerHero .hover-6:hover ~ h1 {
+    margin-top: -150px;
+  }
+  body main .hero .innerHero .hover-7:hover ~ h1 {
+    margin-top: -170px;
+  }
+  body main .hero .innerHero .hover-8:hover ~ h1 {
+    margin-top: -170px;
+  }
+  body main .hero .innerHero .hover-9:hover ~ h1 {
+    margin-top: -190px;
+  }
+  body main h2 {
+    font-size: 1.6rem;
+  }
+  body main h3 {
+    font-size: 1.35rem;
   }
   body main p {
     width: 100%;
@@ -267,7 +454,7 @@ body footer.active section .contact-me {
     margin-bottom: 1em;
   }
   body main .content section .section-container {
-    padding: 2.5em 0em 1.5em;
+    padding: 2.75em 0em 1.75em;
     width: 90%;
     margin: 0px auto;
   }
@@ -295,6 +482,9 @@ body footer.active section .contact-me {
   }
   body main section#tech-skills .two-cols {
     width: 100%;
-    padding: 1em 0em 2em;
+    padding: 0em;
+  }
+  body main section#tech-skills .two-cols:first-child {
+    margin-bottom: 2.5em;
   }
 }/*# sourceMappingURL=styles.css.map */
