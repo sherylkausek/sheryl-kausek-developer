@@ -458,6 +458,9 @@ body footer.active section .contact-me {
     width: 90%;
     margin: 0px auto;
   }
+  body main section#intro {
+    scroll-margin-top: 25vh;
+  }
   body main section#intro .section-container {
     display: block;
   }
@@ -486,5 +489,8 @@ body footer.active section .contact-me {
   }
   body main section#tech-skills .two-cols:first-child {
     margin-bottom: 2.5em;
+  }
+  body main section#experience {
+    scroll-margin-top: 25vh;
   }
 }/*# sourceMappingURL=styles.css.map */
