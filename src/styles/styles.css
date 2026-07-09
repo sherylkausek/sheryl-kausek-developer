@@ -352,6 +352,9 @@ body footer.active section .contact-me {
 }
 
 @media (max-width: 600px) {
+  html {
+    scroll-margin-top: 25vh;
+  }
   /*Responsive styling*/
   body {
     font-size: 1.2em;
