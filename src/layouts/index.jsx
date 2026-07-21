@@ -10,7 +10,7 @@ export default function Layout({ children, pageContext, location }) {
   const { title } = pageContext?.frontmatter || {};
 
   // 2. Set a fallback for the title specifically
-  const displayTitle = title || "Sheryl Kausek | Developer";
+  const displayTitle = title || "Sheryl Kausek - Web Producer / Front-End Developer";
 
   //3. Check if homepage
   const isHomepage = location.pathname === "/";
@@ -23,7 +23,7 @@ export default function Layout({ children, pageContext, location }) {
     <>
       <Helmet>
         <title>{displayTitle}</title>
-        <meta name="description" content="Sheryl Morgan Kausek is a NYC based front-end web developer." />
+        <meta name="description" content="Sheryl Morgan Kausek is a NYC based Web Producer / Front-End Developer specializing in creating responsive and accessible web applications." />
       </Helmet>
       <Header/>
       <main className='mdx-layout'>

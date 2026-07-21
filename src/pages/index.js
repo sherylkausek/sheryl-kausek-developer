@@ -50,10 +50,10 @@ function IndexPage() {
         <div class="content">
           <section id="intro">
             <div class="section-container">
-              <img src={profileImg} alt="Image of Sheryl Morgan Kausek" class="profile-pic" />
+              <img src={profileImg} alt="Sheryl Morgan Kausek" class="profile-pic" />
               <div class="info-wrapper">
-                <h2>Web Producer | Front-End Developer | CMS Author</h2>
-                <p>Web Developer with 13+ years of experience delivering high-impact web solutions within the IBM ecosystem. Combines deep technical expertise in front-end development (HTML, CSS, JavaScript) with extensive page authoring and administration across diverse platforms, including AEM, Drupal and MDX-driven Gatsby sites. Trusted release authority and technical mentor skilled at optimizing content lifecycles, governing quality standards, and streamlining operational workflows using modern tooling and AI-assisted processes.</p>
+                <h2>Technical Web Producer | Front-End Developer | Enterprise CMS (AEM &amp; Drupal)</h2>
+                <p><strong>Web Producer / Front-End Developer</strong> with 20 years of total industry experience, including a distinguished 13-year enterprise tenure at <strong>IBM</strong> and foundational digital asset production at <strong>WebMD</strong>. Expert at merging front-end logic with advanced content management systems (CMS) page authoring and platform administration across Adobe Experience Manager and Drupal ecosystems. Trusted release authority adept at governing code quality, leading cross-functional workflows, and utilizing modern tooling to scale content operations.</p>
               </div>
             </div>
           </section>
@@ -63,11 +63,11 @@ function IndexPage() {
               <div class="two-cols">
                 <h3>Core competencies</h3>
                 <ul>
-                  <li><span>CMS Administration &amp; Content Ops:</span> AEM &amp; Drupal (page authoring &amp; administration), WordPress (theming &amp; full-site builds)</li>
-                  <li><span>Web Production &amp; Component Build:</span> spec review, component mapping, implementation support (design → UI)</li>
-                  <li><span>Quality Assurance &amp; Launch Governance:</span> staging/production checks, HTML/CSS review, cross‑browser testing</li>
-                  <li><span>Process &amp; Onboarding:</span> authoring guides, playbooks, SOPs</li>
-                  <li><span>Workflow & SEO Execution:</span> Jira, Airtable, metadata optimization, semantic structure, WCAG compliance</li>
+                  <li><span>CMS Administration &amp; Content Ops:</span> Enterprise page authoring across AEM and Drupal; end-to-end WordPress theming and full-site builds</li>
+                  <li><span>Web Production &amp; Component Build:</span> Figma spec review, Figma design-to-code translation, component mapping, implementation support (design → UI)</li>
+                  <li><span>Release Governance &amp; QA:</span> Staging and production launch management, strict code reviews, and cross-browser quality assurance tracking</li>
+                  <li><span>Process Standardization:</span> Authoring technical guides, SOPs, training playbooks, and onboarding documentation to eliminate bottlenecks</li>
+                  <li><span>Project Management & Accessibility:</span> Jira/Airtable workflow optimization, technical SEO structure mapping, and WCAG accessibility compliance</li>
                 </ul>
               </div>
               <div class="two-cols">
@@ -76,7 +76,7 @@ function IndexPage() {
                   <li><span>Front-end:</span> HTML5, CSS3, SCSS, Responsive Design, JavaScript (ES6+)</li>
                   <li><span>Frameworks &amp; Libraries:</span> Gatsby, Bootstrap, MDX</li>
                   <li><span>Content Platforms:</span> WordPress (theming, full-site builds); AEM, Drupal (content authoring)</li>
-                  <li><span>Tools &amp; Workflows:</span> Figma, Git, GitHub, CI/CD (GitHub Actions)</li>
+                  <li><span>Tools &amp; Workflows:</span> Figma, Git, GitHub</li>
                   <li><span>Practices:</span> Agile/Scrum, Design Systems</li>
                 </ul>
               </div>
@@ -92,17 +92,17 @@ function IndexPage() {
                 <h3>Professional experience</h3>
               </div>
               <div>
-                <h5>Software Engineer (Contract via Infinite Computer Solutions)</h5>
+                <h5>Technical Web Producer (Software Engineer; Contract via Infinite Computer Solutions)</h5>
                 <p><em>2023 – 2026</em></p>
                 <p>
-                  <span>IBM:</span> Directed a 4-person web production squad managing an enterprise documentation platform across IBM.com, directly improving site architecture, content navigability, and overall platform health.
+                  <span>IBM:</span> Directed a 4-person production squad managing an enterprise IBM.com documentation platform, resulting in optimized architecture, navigability, and site health.
                 </p>
                 <ul>
+                  <li><strong>Managed Jira sprint commitments</strong> and technical task workflows for the team.</li>
                   <li><strong>Produced a production library by building ~40% of 200+ MDX pages</strong> using content and assets provided by the UX team. This work supported AEM authors, designers, and stakeholders by delivering clear references for 89 custom AEM components.</li>
-                  <li><strong>Co-managed production release cycles</strong> as part of a two-person senior governance team, sharing final authority for pull request (PR) approvals, code quality, and deployment schedules.</li>
-                  <li><strong>Scaled content operations and self-service</strong> by training non-technical stakeholders on Git workflows (forking, branching, MDX editing) and maintaining AEM publishing and translation guides to eliminate production bottlenecks.</li>
+                  <li><strong>Co-managed production release cycles</strong> on a two-person senior governance team with final authority over PR approvals, code quality, and deployments.</li>
+                  <li><strong>Scaled content operations and self-service</strong> by training non-technical stakeholders on Git workflows and maintaining AEM publishing guides to accelerate delivery timelines.</li>
                   <li><strong>Mentored junior team members</strong> and provided ongoing technical guidance and code reviews, earning stakeholder and peer recognition for high responsiveness and delivery quality.</li>
-                  <li><strong>Facilitated Agile delivery</strong> by driving sprint planning in Jira and backlog grooming for my squad; leveraged Copilot to draft detailed user stories and technical requirements, ensuring on-time delivery of documentation milestones.</li>
                 </ul>
               </div>
 
@@ -143,10 +143,10 @@ function IndexPage() {
               </div>
 
               <div>
-                <h5>Consultant (Contractual)</h5>
+                <h5>Web Assets Producer (Consultant; Contractual)</h5>
                 <p>
                   <em>2007 – 2008</em><br />
-                  <span>WebMD:</span> Built pixel-perfect promo sites and HTML emails from Photoshop using XHTML, CSS, and JS; integrated third-party Flash assets and performed extensive QA.
+                  <span>WebMD:</span> Produced pixel-perfect promotional sites and HTML emails from design files using XHTML, CSS, and JS; integrated third-party Flash assets and performed extensive QA.
                 </p>
               </div>
 
@@ -181,7 +181,7 @@ function IndexPage() {
 // You'll learn about this in the next task, just copy it for now
 export const Head = () => (
   <>
-    <title>Sheryl Morgan Kausek: Web Producer, Front-End Developer, CMS Author</title>
+    <title>Sheryl Morgan Kausek: Technical Web Producer, Front-End Developer, Enterprise CMS (AEM & Drupal)</title>
     <meta name="description" content="Sheryl Morgan Kausek is a NYC based front-end web developer." />
   </>
 )
