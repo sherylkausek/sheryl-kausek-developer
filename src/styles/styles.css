@@ -1,69 +1,9 @@
 /*Variables*/
-/*Animations*/
-.fade-in {
-  opacity: 0;
-  transform: translateY(30px);
-  animation: fade-in 0.6s linear both;
-  animation-timeline: view();
-  animation-range: cover 0% cover 30%;
-  animation-delay: var(--fade-delay, 0s);
-}
-
-.fade-in--on-load {
-  animation: fade-in 1s ease-out forwards;
-  animation-timeline: auto;
-}
-
-@keyframes fade-in {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-.fade-in--stagger li:nth-child(1) {
-  --fade-delay: 0.08s;
-}
-.fade-in--stagger li:nth-child(2) {
-  --fade-delay: 0.16s;
-}
-.fade-in--stagger li:nth-child(3) {
-  --fade-delay: 0.24s;
-}
-.fade-in--stagger li:nth-child(4) {
-  --fade-delay: 0.32s;
-}
-.fade-in--stagger li:nth-child(5) {
-  --fade-delay: 0.4s;
-}
-.fade-in--stagger li:nth-child(6) {
-  --fade-delay: 0.48s;
-}
-.fade-in--stagger li:nth-child(7) {
-  --fade-delay: 0.56s;
-}
-.fade-in--stagger li:nth-child(8) {
-  --fade-delay: 0.64s;
-}
-
-/*
-.fade-in--stagger .fade-in {
-  animation-range: cover 0% cover 50%;
-}*/
-@media (prefers-reduced-motion: reduce) {
-  .fade-in {
-    animation: none !important;
-    opacity: 1 !important;
-    transform: none !important;
-  }
-}
-@media (prefers-reduced-motion: reduce) {
-  .fade-in {
-    animation: none !important;
-    opacity: 1 !important;
-    transform: none !important;
-  }
-}
 /*Styling*/
+html, body {
+  overflow-x: visible !important;
+}
+
 body {
   margin: 0px;
   padding: 0px;
@@ -529,5 +469,70 @@ body footer.active section .contact-me {
   }
   body main .content section#experience {
     scroll-margin-top: 25vh;
+  }
+}
+/*Animations*/
+body {
+  view-timeline-name: --page;
+  view-timeline-axis: block;
+}
+
+.fade-in {
+  animation-timeline: view();
+  animation-range: cover 0 cover 30%;
+  animation-name: fade-in;
+  animation-duration: 0.6s;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+  animation-delay: var(--fade-delay, 0s);
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.fade-in--on-load {
+  animation: fade-in 1s ease-out forwards;
+  animation-timeline: auto;
+}
+
+@keyframes fade-in {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fade-in--stagger li:nth-child(1) {
+  --fade-delay: 0.08s;
+}
+.fade-in--stagger li:nth-child(2) {
+  --fade-delay: 0.16s;
+}
+.fade-in--stagger li:nth-child(3) {
+  --fade-delay: 0.24s;
+}
+.fade-in--stagger li:nth-child(4) {
+  --fade-delay: 0.32s;
+}
+.fade-in--stagger li:nth-child(5) {
+  --fade-delay: 0.4s;
+}
+.fade-in--stagger li:nth-child(6) {
+  --fade-delay: 0.48s;
+}
+.fade-in--stagger li:nth-child(7) {
+  --fade-delay: 0.56s;
+}
+.fade-in--stagger li:nth-child(8) {
+  --fade-delay: 0.64s;
+}
+
+/*
+.fade-in--stagger .fade-in {
+  animation-range: cover 0% cover 50%;
+}*/
+@media (prefers-reduced-motion: reduce) {
+  .fade-in {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
   }
 }/*# sourceMappingURL=styles.css.map */

@@ -6,59 +6,10 @@ $mobileSectionPadding: 2.75em 0em 1.75em;
 $hrPadding: 0em 3em 0em 2em;
 $sectionAltBg: #f6f6f6;
 
-/*Animations*/
-.fade-in {
-  opacity: 0;
-  transform: translateY(30px);
-  animation: fade-in 0.6s linear both;
-  animation-timeline: view();
-  animation-range: cover 0% cover 30%;
-  animation-delay: var(--fade-delay, 0s);
-}
-
-.fade-in--on-load {
-  animation: fade-in 1s ease-out forwards;
-  animation-timeline: auto;
-}
-
-@keyframes fade-in {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.fade-in--stagger {
-  li {
-    @for $i from 1 through 8 {
-      &:nth-child(#{$i}) {
-        --fade-delay: #{$i * 0.08}s;
-      }
-    }
-  }
-}
-/*
-.fade-in--stagger .fade-in {
-  animation-range: cover 0% cover 50%;
-}*/
-
-@media (prefers-reduced-motion: reduce) {
-  .fade-in {
-    animation: none !important;
-    opacity: 1 !important;
-    transform: none !important;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .fade-in {
-    animation: none !important;
-    opacity: 1 !important;
-    transform: none !important;
-  }
-}
-
 /*Styling*/
+html, body {
+  overflow-x: visible !important;
+}
 body {
     margin: 0px;
     padding: 0px;
@@ -542,4 +493,59 @@ body {
             }
         }
     }
+}
+
+/*Animations*/
+body {
+  view-timeline-name: --page;
+  view-timeline-axis: block;
+}
+
+.fade-in {
+  animation-timeline: view();
+  animation-range: cover 0 cover 30%;
+
+  animation-name: fade-in;
+  animation-duration: .6s;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+
+  animation-delay: var(--fade-delay, 0s);
+
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.fade-in--on-load {
+  animation: fade-in 1s ease-out forwards;
+  animation-timeline: auto;
+}
+
+@keyframes fade-in {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in--stagger {
+  li {
+    @for $i from 1 through 8 {
+      &:nth-child(#{$i}) {
+        --fade-delay: #{$i * 0.08}s;
+      }
+    }
+  }
+}
+/*
+.fade-in--stagger .fade-in {
+  animation-range: cover 0% cover 50%;
+}*/
+
+@media (prefers-reduced-motion: reduce) {
+  .fade-in {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
 }
