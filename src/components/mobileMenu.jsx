@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from 'gatsby'
 
 export default function MobileMenu({ color = "white", size = 32 }) {
   const toggleMenu = () => {

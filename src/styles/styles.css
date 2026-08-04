@@ -1,54 +1,73 @@
 /*Variables*/
 /*Animations*/
-section#intro, section#intro + hr, section#tech-skills, section#tech-skills + hr, section#tech-skills + hr + div, section#experience div, section#edu, section#edu + hr, section#footer {
+.fade-in {
   opacity: 0;
   transform: translateY(30px);
-  /* Use a standard time-based duration as a fallback */
-  animation: fade-in linear both;
-  /* Link to its own visibility in the viewport */
+  animation: fade-in 0.6s linear both;
   animation-timeline: view();
-  /* CRITICAL: Tell the animation to finish early while entering. This prevents it from 'reversing' when you scroll past it. */
-  animation-range: entry 10% entry 40%;
-}
-section#intro, section#tech-skills {
-  animation: fade-in 1s ease-out forwards;
-  animation-timeline: auto; /* Uses standard clock time, not scroll */
-}
-section#tech-skills .section-container {
-  display: flex;
-  flex-direction: row;
-}
-section#tech-skills .section-container .two-cols {
-  width: 50%;
-}
-section#tech-skills .section-container .two-cols ul {
-  width: 93%;
+  animation-range: cover 0% cover 30%;
+  animation-delay: var(--fade-delay, 0s);
 }
 
-@media (min-width: 1024px) {
-  /* The second section waits 0.3s before starting its fade */
-  section#tech-skills {
-    animation-delay: 0.3s;
-  }
+.fade-in--on-load {
+  animation: fade-in 1s ease-out forwards;
+  animation-timeline: auto;
 }
-@media (max-width: 600px) {
-  /*Responsive animation*/
-  section#tech-skills {
-    animation: fade-in linear both !important;
-    animation-timeline: view();
-    animation-delay: 0s;
-  }
-}
+
 @keyframes fade-in {
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
+.fade-in--stagger li:nth-child(1) {
+  --fade-delay: 0.08s;
+}
+.fade-in--stagger li:nth-child(2) {
+  --fade-delay: 0.16s;
+}
+.fade-in--stagger li:nth-child(3) {
+  --fade-delay: 0.24s;
+}
+.fade-in--stagger li:nth-child(4) {
+  --fade-delay: 0.32s;
+}
+.fade-in--stagger li:nth-child(5) {
+  --fade-delay: 0.4s;
+}
+.fade-in--stagger li:nth-child(6) {
+  --fade-delay: 0.48s;
+}
+.fade-in--stagger li:nth-child(7) {
+  --fade-delay: 0.56s;
+}
+.fade-in--stagger li:nth-child(8) {
+  --fade-delay: 0.64s;
+}
+
+/*
+.fade-in--stagger .fade-in {
+  animation-range: cover 0% cover 50%;
+}*/
+@media (prefers-reduced-motion: reduce) {
+  .fade-in {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .fade-in {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
 /*Styling*/
 body {
   margin: 0px;
   padding: 0px;
+  font-size: 18px;
 }
 body header div {
   padding: 64px 0px 32px;
@@ -202,22 +221,22 @@ body main .hero img {
   margin: 0 auto;
 }
 body main h2 {
-  font-size: 1.5rem;
+  font-size: 1.5em;
   font-weight: bold;
   margin-bottom: 24px;
 }
 body main h3 {
-  font-size: 1.25rem;
+  font-size: 1.3em;
   font-weight: bold;
   margin-bottom: 18px;
 }
 body main h5 {
-  font-size: 1em;
+  font-size: 1.15em;
   font-weight: bold;
-  margin-top: 32px;
+  margin-top: 3em;
 }
 body main h5 + p {
-  line-height: 1.7rem;
+  line-height: 1.75em;
 }
 body main p {
   width: 80%;
@@ -247,17 +266,20 @@ body main {
   /*Homepage style*/
 }
 body main .content section .section-container {
-  padding: 3.5em 0em 4.075em;
+  padding: 4.5em 0em 5.075em;
   width: 80%;
   margin: 0px auto;
 }
-body main section#intro .section-container {
+body main .content section .section-container p {
+  line-height: 1.6em;
+}
+body main .content section#intro .section-container {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
-body main section#intro .section-container .profile-pic {
+body main .content section#intro .section-container .profile-pic {
   border-radius: 2.5%;
   width: 250px;
   -o-object-fit: cover;
@@ -265,19 +287,31 @@ body main section#intro .section-container .profile-pic {
   margin-bottom: 0;
   flex: 0 1 250px;
 }
-body main section#intro .section-container .info-wrapper {
+body main .content section#intro .section-container .info-wrapper {
   flex: 1 1 500px;
   padding: 0 0 0 2.5em;
 }
-body main section#tech-skills,
-body main section#edu {
+body main .content section#intro .section-container .info-wrapper p {
+  font-size: 1.075em;
+}
+body main .content section#tech-skills, body main .content section#edu {
   background-color: #f6f6f6;
+}
+body main .content section#tech-skills .section-container {
+  display: flex;
+  flex-direction: row;
+}
+body main .content section#tech-skills .section-container .two-cols {
+  width: 50%;
+}
+body main .content section#tech-skills .section-container .two-cols ul {
+  width: 93%;
 }
 body main {
   /* end homepage styles*/
 }
 body main .mdx {
-  padding: 3.5em 0em 4.075em;
+  padding: 4.5em 0em 5.075em;
   width: 80%;
   margin: 0px auto;
 }
@@ -287,7 +321,7 @@ body footer {
   overflow: hidden;
 }
 body footer section {
-  padding: 3.5em 0em 4.075em;
+  padding: 4.5em 0em 5.075em;
   width: 80%;
   margin: 0px auto;
 }
@@ -461,39 +495,39 @@ body footer.active section .contact-me {
     width: 90%;
     margin: 0px auto;
   }
-  body main section#intro {
+  body main .content section#intro {
     scroll-margin-top: 25vh;
   }
-  body main section#intro .section-container {
+  body main .content section#intro .section-container {
     display: block;
   }
-  body main section#intro .section-container .profile-pic {
+  body main .content section#intro .section-container .profile-pic {
     margin-bottom: 2em;
   }
-  body main section#intro .section-container .info-wrapper {
+  body main .content section#intro .section-container .info-wrapper {
     display: block;
     padding: 0;
   }
-  body main section#tech-skills {
+  body main .content section#tech-skills {
     display: block;
   }
-  body main section#tech-skills .section-container {
+  body main .content section#tech-skills .section-container {
     display: block;
   }
-  body main section#tech-skills .section-container .two-cols {
+  body main .content section#tech-skills .section-container .two-cols {
     width: 100%;
   }
-  body main section#tech-skills .section-container .two-cols ul {
+  body main .content section#tech-skills .section-container .two-cols ul {
     width: 100%;
   }
-  body main section#tech-skills .two-cols {
+  body main .content section#tech-skills .two-cols {
     width: 100%;
     padding: 0em;
   }
-  body main section#tech-skills .two-cols:first-child {
+  body main .content section#tech-skills .two-cols:first-child {
     margin-bottom: 2.5em;
   }
-  body main section#experience {
+  body main .content section#experience {
     scroll-margin-top: 25vh;
   }
 }/*# sourceMappingURL=styles.css.map */
