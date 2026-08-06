@@ -371,7 +371,7 @@ body footer.active section .contact-me {
   body main #menuItems {
     display: block;
     width: 100%;
-    height: 25vh;
+    height: auto; /* 25vh;*/
     background-color: #000;
     color: #fff;
     position: fixed;
@@ -395,6 +395,8 @@ body footer.active section .contact-me {
   }
   body main #menuItems ul li {
     margin-bottom: 1em;
+    list-style-type: none;
+    font-size: 1.3em;
   }
   body main .hero .innerHero .mobile-menu {
     display: block;
@@ -470,7 +472,7 @@ body footer.active section .contact-me {
     margin: 0px auto;
   }
   body main .content section#intro {
-    scroll-margin-top: 25vh;
+    scroll-margin-top: 28vh;
   }
   body main .content section#intro .section-container {
     display: block;
@@ -502,7 +504,7 @@ body footer.active section .contact-me {
     margin-bottom: 2.5em;
   }
   body main .content section#featured-project {
-    scroll-margin-top: 25vh;
+    scroll-margin-top: 28vh;
   }
   body main .content section#featured-project .header-container {
     padding: 2.5em 0px 1em;
@@ -510,7 +512,7 @@ body footer.active section .contact-me {
     width: 90%;
   }
   body main .content section#experience {
-    scroll-margin-top: 25vh;
+    scroll-margin-top: 28vh;
   }
 }
 /*Animations*/

@@ -390,7 +390,7 @@ body {
             #menuItems {
                 display: block;
                 width: 100%;
-                height: 25vh;
+                height: auto; /* 25vh;*/
                 background-color: #000;
                 color:#fff;
                 position: fixed;
@@ -412,6 +412,8 @@ body {
                     width: 100%;
                     li {
                         margin-bottom: 1em;
+                        list-style-type: none;
+                        font-size: 1.3em;
                     }
                 }
             }
@@ -493,7 +495,7 @@ body {
                         margin: 0px auto;
                     }
                     &#intro {
-                        scroll-margin-top: 25vh;
+                        scroll-margin-top: 28vh;
                         .section-container {
                             display: block;
                             .profile-pic {
@@ -526,7 +528,7 @@ body {
                         }
                     }
                     &#featured-project {
-                        scroll-margin-top: 25vh;
+                        scroll-margin-top: 28vh;
                         .header-container {
                             padding: 2.5em 0px 1em;
                             display: block;
@@ -534,7 +536,7 @@ body {
                         }
                     }
                     &#experience {
-                        scroll-margin-top: 25vh;
+                        scroll-margin-top: 28vh;
                     }
                 }
             }
