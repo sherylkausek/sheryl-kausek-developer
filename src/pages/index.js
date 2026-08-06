@@ -2,6 +2,7 @@
 import * as React from 'react'
 import SiteFooter from '../components/footer'
 import profileImg from '../images/smk-profile.png'
+import projectImg from '../images/featured-project.png'
 import MobileMenu from '../components/mobileMenu'
 
 // Step 2: Define your component
@@ -26,7 +27,8 @@ function IndexPage() {
           }} title="Close menu" aria-label="Close menu">X</span>
           <ul>
             <li><a href="#intro" aria-label="Intro">Intro</a></li>
-            <li><a href="#experience" aria-label="CV">CV</a></li>
+            <li><a href="#featured-project" aria-label="Featured Client Work">Featured Client Work</a></li>
+            <li><a href="#experience" aria-label="Experience">Experience</a></li>
           </ul>
         </div>
         <div className="hero">
@@ -103,6 +105,53 @@ function IndexPage() {
                   </li>
                   <li className="fade-in">
                     <span>Practices:</span> Agile/Scrum, Design Systems
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section id="featured-project">
+            <div className="header-container">
+              <h3 className="fade-in">Featured Client Work</h3>
+            </div>
+            <div className="section-container">
+              <div className="two-cols">
+                <a href="https://davidkausek.com" target="_blank" rel="noopener noreferrer">
+                  <img src={projectImg} alt="WordPress website recently launched" className="project-img fade-in" />
+                </a>
+              </div>
+              <div className="two-cols">
+                <p className="fade-in">
+                  Recently launched a WordPress site for a client.
+                </p><br/>
+                <p className="fade-in">
+                  <strong>Live site:</strong> <a href="https://davidkausek.com" target="_blank" rel="noopener noreferrer">https://davidkausek.com</a>
+                </p>
+                <ul className="fade-in--stagger">
+                  <li className="fade-in" style={{ '--fade-delay': '0.1s' }}>
+                    Created a custom block theme
+                  </li>
+                  <li className="fade-in">
+                    Built page templates
+                  </li>
+                  <li className="fade-in">
+                    Developed reusable block patterns
+                  </li>
+                  <li className="fade-in">
+                    Configured global styles (typography, color system, block styling)
+                  </li>
+                  <li className="fade-in">
+                    Wrote custom CSS for responsive behavior and edge cases
+                  </li>
+                  <li className="fade-in">
+                    Selected, evaluated, and configured plugins
+                  </li>
+                  <li className="fade-in">
+                    Planned information architecture and user flows
+                  </li>
+                  <li className="fade-in">
+                    Delivered the site from concept through launch
                   </li>
                 </ul>
               </div>

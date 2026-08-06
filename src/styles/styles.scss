@@ -5,6 +5,10 @@ $sectionPadding: 4.5em 0em 5.075em;
 $mobileSectionPadding: 2.75em 0em 1.75em;
 $hrPadding: 0em 3em 0em 2em;
 $sectionAltBg: #f6f6f6;
+$sectionAltSecondaryBg: #eaeaea;
+$footerBg: #000;
+$genericMdxBg: #eee;
+$landingH1Color: #fff;
 
 /*Styling*/
 html, body {
@@ -37,7 +41,7 @@ body {
     }
     main {
         &.mdx-layout {
-            background-color: #eee;
+            background-color: $genericMdxBg;
         }
         .hero {
             background: #ddd url('../images/cover-photo.jpeg');
@@ -71,7 +75,7 @@ body {
                     display:none;
                 }
                 h1 {
-                    color: #fff;
+                    color: $landingH1Color;
                     font-size: 2.75em;
                     font-weight: bold;
                     /*padding-top: 15rem;*/
@@ -212,6 +216,14 @@ body {
         }
         /*Homepage style*/
         .content section {
+            a {
+                color: #0b61ec;
+                text-decoration: underline;
+                &:hover {
+                    color: $linkHoverColor;
+                    text-decoration: none;
+                }
+            }
             .section-container {
                 padding: $sectionPadding;
                 width: 80%;
@@ -246,7 +258,8 @@ body {
             &#edu {
                 background-color: $sectionAltBg;
             }
-            &#tech-skills {
+            &#tech-skills,
+            &#featured-project {
                 .section-container {
                     display: flex;
                     flex-direction:row;
@@ -255,6 +268,31 @@ body {
                         ul {
                             width: 93%;
                         }
+                    }
+                }
+            }
+            &#featured-project {
+                background-color: $sectionAltSecondaryBg;
+                .header-container {
+                    padding: 4.5em 0px 1em;
+                    width: 80%;
+                    margin: 0px auto;
+                }                
+                .section-container {
+                    padding-top: 0px;
+                }
+                .project-img {
+                    border-radius: 16px;
+                    /*max-height: 33vh;*/
+                    max-width: 95%;
+                    object-fit: cover;
+                    margin-bottom: 0;
+                    /*flex: 0 1 250px;*/
+                    box-shadow: 0px 0px 10px #000;
+                    &:hover {
+                        filter: opacity(0.8);
+                        transition: all 0.3s ease;
+                        cursor: crosshair;
                     }
                 }
             }
@@ -267,7 +305,7 @@ body {
         }
     }
     footer {
-        background: #000;
+        background: $footerBg;
         margin: 0px auto;
         overflow: hidden;
         section {
@@ -467,7 +505,8 @@ body {
                             }
                         }
                     }
-                    &#tech-skills {
+                    &#tech-skills,
+                    &#featured-project {
                         display: block;
                         .section-container {
                             display: block;
@@ -484,6 +523,14 @@ body {
                             &:first-child {
                                 margin-bottom: 2.5em;
                             }
+                        }
+                    }
+                    &#featured-project {
+                        scroll-margin-top: 25vh;
+                        .header-container {
+                            padding: 2.5em 0px 1em;
+                            display: block;
+                            width: 90%;
                         }
                     }
                     &#experience {

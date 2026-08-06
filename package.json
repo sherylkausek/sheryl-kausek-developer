@@ -33,6 +33,9 @@
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
     "react-markdown": "^10.1.0",
+    "rehype-prism-plus": "^2.0.2",
+    "remark-autolink-headings": "^7.0.1",
+    "remark-slug": "^7.0.1",
     "tailwindcss": "^4.2.2"
   }
 }
