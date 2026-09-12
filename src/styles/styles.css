@@ -229,18 +229,20 @@ body main .content section#intro .section-container {
 }
 body main .content section#intro .section-container .profile-pic {
   border-radius: 2.5%;
-  width: 250px;
+  width: 300px;
   -o-object-fit: cover;
      object-fit: cover;
   margin-bottom: 0;
-  flex: 0 1 250px;
+  flex: 0 1 300px;
 }
 body main .content section#intro .section-container .info-wrapper {
   flex: 1 1 500px;
   padding: 0 0 0 2.5em;
 }
 body main .content section#intro .section-container .info-wrapper p {
-  font-size: 1.075em;
+  font-size: 1em;
+  padding-bottom: 1.5em;
+  width: 88%;
 }
 body main .content section#tech-skills, body main .content section#edu {
   background-color: #f6f6f6;
@@ -359,7 +361,7 @@ body footer.active section .contact-me {
   visibility: visible;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 999px) {
   html {
     scroll-margin-top: 25vh;
   }
@@ -483,6 +485,9 @@ body footer.active section .contact-me {
   body main .content section#intro .section-container .info-wrapper {
     display: block;
     padding: 0;
+  }
+  body main .content section#intro .section-container .info-wrapper p {
+    width: 100%;
   }
   body main .content section#tech-skills, body main .content section#featured-project {
     display: block;

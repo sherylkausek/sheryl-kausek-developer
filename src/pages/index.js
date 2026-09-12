@@ -55,10 +55,13 @@ function IndexPage() {
               <img src={profileImg} alt="Sheryl Morgan Kausek" className="profile-pic" />
               <div className="info-wrapper">
                 <h2 className="fade-in fade-in--on-load">
-                  Technical Web Producer | Front-End Developer | Enterprise CMS (AEM &amp; Drupal)
+                  Senior AEM Content Author | Enterprise CMS | Technical Web Producer
                 </h2>
                 <p className="fade-in fade-in--on-load" style={{ '--fade-delay': '0.15s' }}>
-                  <strong>Web Producer / Front-End Developer</strong> with 20 years of experience designing, building, and maintaining responsive websites across enterprise and CMS-driven environments, including 13 years supporting <strong>IBM</strong>'s digital ecosystem and earlier digital asset production experience at <strong>WebMD</strong>. Experienced in web content production, CMS authoring, and front-end development across AEM, Drupal, WordPress, and Gatsby/MDX platforms. Trusted release authority skilled in translating content and design requirements into high-quality digital experiences through component-based systems, rigorous QA, and cross-functional collaboration.
+                  Hi. I'm a <strong>Senior AEM Content Author</strong> with 20 years of web production experience, including more than 13 years supporting <strong>IBM</strong>'s digital ecosystem. I've worked extensively with Adobe Experience Manager (AEM), along with Drupal, custom CMS platforms, and Gatsby/MDX, building and maintaining enterprise web pages with a strong front-end foundation in HTML and CSS.
+                </p>
+                <p className="fade-in fade-in--on-load" style={{ '--fade-delay': '0.15s' }}>
+                  I'm also experienced in translating Figma designs into AEM pages, responsive QA, publishing workflows, and technical collaboration. I enjoy working with UX designers, writers, engineers, project managers, and stakeholders to turn content and design requirements into polished, production-ready web experiences.
                 </p>
               </div>
             </div>
@@ -70,19 +73,16 @@ function IndexPage() {
                 <h3 className="fade-in fade-in--on-load">Core competencies</h3>
                 <ul className="fade-in--stagger">
                   <li className="fade-in fade-in--on-load">
-                    <span>CMS Administration &amp; Content Ops:</span> Enterprise page authoring across AEM and Drupal; end-to-end WordPress theming and full-site builds
+                    <span>AEM Content Authoring & CMS Operations:</span> Creating and maintaining enterprise web pages using Adobe Experience Manager; managing multilingual content
                   </li>
                   <li className="fade-in">
-                    <span>Web Production &amp; Component Build:</span> Figma spec review, Figma design-to-code translation, component mapping, implementation support (design → UI)
+                    <span>Figma-to-AEM Implementation:</span> Translating Figma designs into AEM pages using existing components; supporting design-to-UI implementation
                   </li>
                   <li className="fade-in">
-                    <span>Release Governance &amp; QA:</span> Staging and production launch management, strict code reviews, and cross-browser quality assurance tracking
+                    <span>Release Management &amp; Responsive QA:</span> Content publishing, phased releases, code review, deployment workflows, and responsive QA
                   </li>
                   <li className="fade-in">
-                    <span>Process Standardization:</span> Authoring technical guides, SOPs, training playbooks, and onboarding documentation to eliminate bottlenecks
-                  </li>
-                  <li className="fade-in">
-                    <span>Project Management &amp; Accessibility:</span> Jira/Airtable workflow optimization, technical SEO structure mapping, and WCAG accessibility compliance
+                    <span>Documentation, Workflow &amp; Accessibility:</span> Creating and updating AEM authoring and publishing guides, technical documentation, Jira/Airtable workflows, technical SEO structure, and WCAG accessibility
                   </li>
                 </ul>
               </div>
@@ -95,16 +95,16 @@ function IndexPage() {
                     <span>Front-end:</span> HTML5, CSS3, SCSS, Responsive Design, JavaScript (ES6+)
                   </li>
                   <li className="fade-in">
-                    <span>Frameworks &amp; Libraries:</span> Gatsby, Bootstrap, MDX
+                    <span>Content Platforms:</span> AEM, Drupal (content authoring); WordPress (theming, full-site builds)
                   </li>
                   <li className="fade-in">
-                    <span>Content Platforms:</span> WordPress (theming, full-site builds); AEM, Drupal (content authoring)
+                    <span>Frameworks &amp; Content:</span> Gatsby, Bootstrap, MDX
                   </li>
                   <li className="fade-in">
-                    <span>Tools &amp; Workflows:</span> Figma, Git, GitHub
+                    <span>Tools &amp; Workflows:</span> Figma, Git, GitHub, Jira, Airtable
                   </li>
                   <li className="fade-in">
-                    <span>Practices:</span> Agile/Scrum, Design Systems
+                    <span>Practices:</span> Agile/Scrum, Design Systems, WCAG Accessibility
                   </li>
                 </ul>
               </div>
@@ -167,17 +167,18 @@ function IndexPage() {
                 <h3 className="fade-in">Professional experience</h3>
               </div>
               <div>
-                <h5 className="fade-in">Technical Web Producer (Software Engineer; Contract via Infinite Computer Solutions)</h5>
+                <h5 className="fade-in">Web Producer / Front-End Developer (Software Engineer; Contract via Infinite Computer Solutions)</h5>
                 <p className="fade-in"><em>2023 – 2026</em></p>
                 <p className="fade-in">
-                  <span>IBM:</span> Directed a 4-person production squad managing an enterprise IBM.com documentation platform, resulting in optimized architecture, navigability, and site health.
+                  <span>IBM:</span> Served as Squad Leader for a team of 4 responsible for the ongoing development and upkeep of an enterprise documentation platform used across IBM.com, coordinating sprint commitments, managing the squad backlog, and providing squad updates in larger team calls.
                 </p>
                 <ul className="fade-in--stagger">
                   <li className="fade-in"><strong>Managed Jira sprint commitments</strong> and technical task workflows for the team.</li>
-                  <li className="fade-in"><strong>Built ~40% of 200+ MDX documentation pages</strong> from UX-provided content and assets, creating reference materials for 89 custom AEM components that enabled more consistent authoring across design and web production teams.</li>
-                  <li className="fade-in"><strong>Co-managed production release cycles</strong> on a two-person senior governance team with final authority over PR approvals, code quality, and deployments.</li>
-                  <li className="fade-in"><strong>Scaled content operations and self-service</strong> by training non-technical stakeholders on Git workflows and maintaining AEM publishing guides to accelerate delivery timelines.</li>
-                  <li className="fade-in"><strong>Mentored junior team members</strong> and provided ongoing technical guidance and code reviews, earning stakeholder and peer recognition for high responsiveness and delivery quality.</li>
+                  <li className="fade-in">Led the rebuild and expansion of an existing reference library for 89 custom AEM components using content and assets provided by the UX team, personally <strong>building ~40% of the 200+ MDX documentation pages</strong>.</li>
+                  <li className="fade-in"><strong>Created and maintained AEM authoring, publishing, and translation documentation</strong> to support consistent content delivery across sites.</li>
+                  <li className="fade-in">Maintained high code quality as part of a two-person senior review team, <strong>managing final Pull Request (PR) approvals and production release cycles</strong>.</li>
+                  <li className="fade-in"><strong>Mentored one junior developer</strong> and provided ongoing technical guidance and code reviews.</li>
+                  <li className="fade-in">Used HTML, CSS, JavaScript, GitHub, Figma, and Airtable to build and maintain web content; <strong>received stakeholder and peer kudos for responsiveness and quality.</strong></li>
                 </ul>
               </div>
 
@@ -185,14 +186,16 @@ function IndexPage() {
                 <h5 className="fade-in">Web Content Manager/Developer (Contract via Morningview Technologies Inc)</h5>
                 <p className="fade-in"><em>2012 – 2023</em></p>
                 <p className="fade-in">
-                  <span>IBM:</span> Developed, launched, and maintained cross-functional internal and external web properties across enterprise Drupal, custom CMS, and Adobe Experience Manager (AEM) ecosystems.
+                  <span>IBM:</span> Developed and maintained internal and external IBM web properties across multiple CMS platforms, including custom CMS, WCM, Drupal, and Adobe Experience Manager.
                 </p>
                 <ul className="fade-in--stagger">
-                  <li className="fade-in"><strong>Executed multi-phase migrations of ~400 pages</strong> from legacy setups to Drupal, and subsequently into AEM while maintaining brand guidelines and SEO continuity.</li>
-                  <li className="fade-in"><strong>Utilized AEM Launches to prototype and stage complex page updates</strong>, effectively eliminating deployment risk and accelerating time-to-market through structured stakeholder review cycles.</li>
-                  <li className="fade-in"><strong>Chaired bi-monthly developer calls</strong> following a major production team restructuring, setting agendas and documentation to standardize AEM authoring procedures across cross-functional pools.</li>
-                  <li className="fade-in"><strong>Served as Discipline Lead for the Hybrid Cloud production pool</strong>, managing resource assignments, mentoring front-end developers, and resolving advanced technical blockers.</li>
-                  <li className="fade-in"><strong>Enforced enterprise digital accessibility (WCAG) and quality standards</strong> across all live web properties to guarantee responsive and cross-device consistency.</li>
+                  <li className="fade-in"><strong>Created and maintained 400+ high‑traffic pages</strong> in Adobe Experience Manager, using templates and reusable components in the AEM authoring environment to deliver a consistent, on‑brand experience across multiple sites.</li>
+                  <li className="fade-in"><strong>Managed multilingual content</strong> in AEM and other enterprise CMS platforms, creating language master pages for translation, localized pages, and performing responsive QA on translated content.</li>
+                  <li className="fade-in"><strong>Used AEM Launch to prototype page updates</strong> without affecting the published version, allowing stakeholders to review and approve content changes before release.</li>
+                  <li className="fade-in"><strong>Chaired bi-monthly developer calls</strong>, managing meeting logistics, setting agendas, facilitating discussions, and maintaining shared recordings and documentation to standardize AEM authoring procedures and share technical insights across production teams.</li>
+                  <li className="fade-in"><strong>Migrated legacy sites from Drupal and other platforms into AEM</strong>, preserving branding, content accuracy, and SEO structure throughout the transition.</li>
+                  <li className="fade-in">Supported <strong>accessibility and quality standards</strong> across <strong>enterprise web properties</strong>.</li>
+                  <li className="fade-in"><strong>Served as Discipline Lead for the Hybrid Cloud production pool</strong>, mentoring developers and resolving challenging technical issues.</li>
                 </ul>
               </div>
 
@@ -203,9 +206,9 @@ function IndexPage() {
                   <span>LicenseStream:</span> Led UI development, front-end design, and digital asset production for an ASP.NET-based licensing platform.
                 </p>
                 <ul className="fade-in--stagger">
-                  <li className="fade-in"><strong>Engineered interactive interfaces</strong> using XHTML, HTML5, and jQuery, delivering production-ready visual assets optimized for seamless backend developer integration.</li>
-                  <li className="fade-in"><strong>Established modular CSS architecture</strong> using LESS and CSS3 frameworks to ensure site scalability.</li>
-                  <li className="fade-in"><strong>Managed cross-browser quality assurance (QA)</strong> and web multimedia optimization within a fast-paced, Agile production environment.</li>
+                  <li className="fade-in"><strong>Engineered interactive interfaces</strong> using XHTML, HTML5, and jQuery and built production-ready assets for ASP.NET backend integration.</li>
+                  <li className="fade-in"><strong>Implemented modular CSS architectures</strong> using LESS and CSS3 frameworks to ensure site scalability.</li>
+                  <li className="fade-in">Optimized web multimedia and <strong>managed cross-browser testing</strong> in an Agile environment.</li>
                 </ul>
               </div>
 
@@ -221,7 +224,7 @@ function IndexPage() {
                 <h5 className="fade-in">Web Assets Producer (Consultant; Contractual)</h5>
                 <p className="fade-in">
                   <em>2007 – 2008</em><br />
-                  <span>WebMD:</span> Produced pixel-perfect promotional sites and HTML emails from design files using XHTML, CSS, and JS; integrated third-party Flash assets and performed extensive QA.
+                  <span>WebMD:</span> Built pixel-perfect promo sites and HTML emails from Photoshop using XHTML, CSS, and JS; integrated third-party Flash assets and performed extensive QA.
                 </p>
               </div>
 
@@ -229,7 +232,7 @@ function IndexPage() {
                 <h5 className="fade-in">Associate Producer</h5>
                 <p className="fade-in">
                   <em>2006 – 2007</em><br />
-                  <span>WebMD:</span> Produced promotional sites using XHTML/CSS and Photoshop; developed a RegEx-based code library to streamline team workflows and managed CMS publishing.
+                  <span>WebMD:</span> Built promotional sites using XHTML/CSS and Photoshop; developed a regular-expression-based code library to streamline team workflows and managed CMS publishing.
                 </p>
               </div>
             </div>
@@ -256,8 +259,8 @@ function IndexPage() {
 // You'll learn about this in the next task, just copy it for now
 export const Head = () => (
   <>
-    <title>Sheryl Morgan Kausek: Technical Web Producer, Front-End Developer, Enterprise CMS (AEM & Drupal)</title>
-    <meta name="description" content="Sheryl Morgan Kausek is a NYC based front-end web developer." />
+    <title>Sheryl Morgan Kausek: Senior AEM Content Author, Enterprise CMS, Technical Web Producer</title>
+    <meta name="description" content="Sheryl Morgan Kausek is a NYC-based senior AEM content author and front-end web developer who maintains enterprise and multilingual websites." />
   </>
 )
 
