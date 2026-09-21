@@ -61,7 +61,7 @@ function IndexPage() {
                   Hi. I'm a <strong>Senior AEM Content Author</strong> with 20 years of web production experience, including more than 13 years supporting <strong>IBM</strong>'s digital ecosystem. I've worked extensively with Adobe Experience Manager (AEM), along with Drupal, custom CMS platforms, and Gatsby/MDX, building and maintaining enterprise web pages with a strong front-end foundation in HTML and CSS.
                 </p>
                 <p className="fade-in fade-in--on-load" style={{ '--fade-delay': '0.15s' }}>
-                  I'm also experienced in translating Figma designs into AEM pages, responsive QA, publishing workflows, and technical collaboration. I enjoy working with UX designers, writers, engineers, project managers, and stakeholders to turn content and design requirements into polished, production-ready web experiences.
+                  I'm experienced in translating Figma designs into AEM pages using existing components, and have hands-on experience using blocks in AEM Edge Delivery Services (EDS), with a focus on responsive QA, publishing workflows, accessibility, and technical collaboration. I enjoy working with UX designers, writers, engineers, project managers, and stakeholders to turn content and design requirements into polished, production-ready web experiences.
                 </p>
               </div>
             </div>
@@ -73,7 +73,7 @@ function IndexPage() {
                 <h3 className="fade-in fade-in--on-load">Core competencies</h3>
                 <ul className="fade-in--stagger">
                   <li className="fade-in fade-in--on-load">
-                    <span>AEM Content Authoring & CMS Operations:</span> Creating and maintaining enterprise web pages using Adobe Experience Manager; managing multilingual content
+                    <span>AEM Content Authoring & CMS Operations:</span> Creating and maintaining enterprise web pages using Adobe Experience Manager (AEM Sites); managing multilingual content; hands-on experience with AEM Edge Delivery Services
                   </li>
                   <li className="fade-in">
                     <span>Figma-to-AEM Implementation:</span> Translating Figma designs into AEM pages using existing components; supporting design-to-UI implementation
