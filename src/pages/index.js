@@ -58,10 +58,10 @@ function IndexPage() {
                   Senior AEM Content Author | Enterprise CMS | Technical Web Producer
                 </h2>
                 <p className="fade-in fade-in--on-load" style={{ '--fade-delay': '0.15s' }}>
-                  Hi. I'm a <strong>Senior AEM Content Author</strong> with 20 years of web production experience, including more than 13 years supporting <strong>IBM</strong>'s digital ecosystem. I've worked extensively with Adobe Experience Manager (AEM), along with Drupal, custom CMS platforms, and Gatsby/MDX, building and maintaining enterprise web pages with a strong front-end foundation in HTML and CSS.
+                  Hi. I'm a <strong>Senior AEM Content Author</strong> with 20 years of web production experience, including more than 13 years supporting <strong>IBM</strong>'s digital ecosystem. I've created and maintained over 400 pages in Adobe Experience Manager (AEM), with additional experience in Drupal, WordPress, custom CMS platforms, and Gatsby/MDX. My front-end background in HTML, CSS, and JavaScript helps me troubleshoot issues, refine layouts, and bridge the gap between content authoring and development.
                 </p>
                 <p className="fade-in fade-in--on-load" style={{ '--fade-delay': '0.15s' }}>
-                  I'm experienced in translating Figma designs into AEM pages using existing components, and have hands-on experience using blocks in AEM Edge Delivery Services (EDS), with a focus on responsive QA, publishing workflows, accessibility, and technical collaboration. I enjoy working with UX designers, writers, engineers, project managers, and stakeholders to turn content and design requirements into polished, production-ready web experiences.
+                  I'm experienced in translating Figma designs into production-ready AEM pages using existing components and templates. I've also expanded my skills through hands-on projects with AEM Edge Delivery Services (EDS), including block-based authoring and the Universal Editor. My work emphasizes responsive QA, accessibility, and publishing workflows, and I enjoy collaborating with designers, writers, developers, and stakeholders to deliver polished, functional web experiences.
                 </p>
               </div>
             </div>
@@ -101,7 +101,10 @@ function IndexPage() {
                     <span>Frameworks &amp; Content:</span> Gatsby, Bootstrap, MDX
                   </li>
                   <li className="fade-in">
-                    <span>Tools &amp; Workflows:</span> Figma, Git, GitHub, Jira, Airtable
+                    <span>Collaboration &amp; Workflows:</span> Figma, Git, GitHub, Jira, Airtable
+                  </li>
+                  <li className="fade-in">
+                    <span>AI Tools:</span> Microsoft Copilot, ChatGPT
                   </li>
                   <li className="fade-in">
                     <span>Practices:</span> Agile/Scrum, Design Systems, WCAG Accessibility
@@ -170,15 +173,15 @@ function IndexPage() {
                 <h5 className="fade-in">Web Producer / Front-End Developer (Software Engineer; Contract via Infinite Computer Solutions)</h5>
                 <p className="fade-in"><em>2023 – 2026</em></p>
                 <p className="fade-in">
-                  <span>IBM:</span> Served as Squad Leader for a team of 4 responsible for the ongoing development and upkeep of an enterprise documentation platform used across IBM.com, coordinating sprint commitments, managing the squad backlog, and providing squad updates in larger team calls.
+                  <span>IBM</span>
                 </p>
                 <ul className="fade-in--stagger">
-                  <li className="fade-in"><strong>Managed Jira sprint commitments</strong> and technical task workflows for the team.</li>
-                  <li className="fade-in">Led the rebuild and expansion of an existing reference library for 89 custom AEM components using content and assets provided by the UX team, personally <strong>building ~40% of the 200+ MDX documentation pages</strong>.</li>
-                  <li className="fade-in"><strong>Created and maintained AEM authoring, publishing, and translation documentation</strong> to support consistent content delivery across sites.</li>
-                  <li className="fade-in">Maintained high code quality as part of a two-person senior review team, <strong>managing final Pull Request (PR) approvals and production release cycles</strong>.</li>
-                  <li className="fade-in"><strong>Mentored one junior developer</strong> and provided ongoing technical guidance and code reviews.</li>
-                  <li className="fade-in">Used HTML, CSS, JavaScript, GitHub, Figma, and Airtable to build and maintain web content; <strong>received stakeholder and peer kudos for responsiveness and quality.</strong></li>
+                  <li className="fade-in">Led the rebuild and expansion of a reference library explaining how to use 89 custom AEM components. Used content and assets from the UX team and personally built about 40% of the 200+ MDX documentation pages.</li>
+                  <li className="fade-in">Wrote and updated guides for AEM authoring, publishing, and translation to help content authors follow consistent publishing practices.</li>
+                  <li className="fade-in">Led a team of four maintaining a documentation website used across IBM.com. Planned sprint work, managed the team's backlog, and shared progress in team calls.</li>
+                  <li className="fade-in">Worked with another senior reviewer to check code, give final approval on pull requests, and manage releases to the live site.</li>
+                  <li className="fade-in">Mentored one junior developer and provided ongoing technical guidance.</li>
+                  <li className="fade-in">Built and maintained web content using HTML, CSS, JavaScript, GitHub, Figma, and Airtable. Received praise from colleagues and stakeholders for responsive support and quality work.</li>
                 </ul>
               </div>
 
@@ -186,16 +189,16 @@ function IndexPage() {
                 <h5 className="fade-in">Web Content Manager/Developer (Contract via Morningview Technologies Inc)</h5>
                 <p className="fade-in"><em>2012 – 2023</em></p>
                 <p className="fade-in">
-                  <span>IBM:</span> Developed and maintained internal and external IBM web properties across multiple CMS platforms, including custom CMS, WCM, Drupal, and Adobe Experience Manager.
+                  <span>IBM</span>
                 </p>
                 <ul className="fade-in--stagger">
-                  <li className="fade-in"><strong>Created and maintained 400+ high‑traffic pages</strong> in Adobe Experience Manager, using templates and reusable components in the AEM authoring environment to deliver a consistent, on‑brand experience across multiple sites.</li>
-                  <li className="fade-in"><strong>Managed multilingual content</strong> in AEM and other enterprise CMS platforms, creating language master pages for translation, localized pages, and performing responsive QA on translated content.</li>
-                  <li className="fade-in"><strong>Used AEM Launch to prototype page updates</strong> without affecting the published version, allowing stakeholders to review and approve content changes before release.</li>
-                  <li className="fade-in"><strong>Chaired bi-monthly developer calls</strong>, managing meeting logistics, setting agendas, facilitating discussions, and maintaining shared recordings and documentation to standardize AEM authoring procedures and share technical insights across production teams.</li>
-                  <li className="fade-in"><strong>Migrated legacy sites from Drupal and other platforms into AEM</strong>, preserving branding, content accuracy, and SEO structure throughout the transition.</li>
-                  <li className="fade-in">Supported <strong>accessibility and quality standards</strong> across <strong>enterprise web properties</strong>.</li>
-                  <li className="fade-in"><strong>Served as Discipline Lead for the Hybrid Cloud production pool</strong>, mentoring developers and resolving challenging technical issues.</li>
+                  <li className="fade-in">Checked web content for accuracy and accessibility, including image alt text, headings, links, formatting, metadata, and how pages displayed across devices.</li>
+                  <li className="fade-in">Created and maintained more than 400 high-traffic AEM pages using existing templates and reusable components, keeping content and branding consistent across sites.</li>
+                  <li className="fade-in">Managed content in multiple languages using AEM and other content management systems. Created language master pages for translation, built locale-specific live copy pages, and checked translated pages across screen sizes.</li>
+                  <li className="fade-in">Used AEM Launch to prepare page updates separately from the publishable version so stakeholders could review and approve changes before release.</li>
+                  <li className="fade-in">Led bi-monthly developer calls, organized meetings, set agendas, and kept recordings and notes to help production teams follow consistent AEM authoring practices and share technical guidance.</li>
+                  <li className="fade-in">Moved sites from Drupal and other platforms into AEM while preserving branding, content accuracy, and SEO structure.</li>
+                  <li className="fade-in">Served as Discipline Lead for the Hybrid Cloud production team, helping developers build their skills and solve technical problems.</li>
                 </ul>
               </div>
 
@@ -203,37 +206,46 @@ function IndexPage() {
                 <h5 className="fade-in">Senior Web Designer/Developer</h5>
                 <p className="fade-in"><em>2008 – 2012</em></p>
                 <p className="fade-in">
-                  <span>LicenseStream:</span> Led UI development, front-end design, and digital asset production for an ASP.NET-based licensing platform.
+                  <span>ImageSpan</span>
                 </p>
                 <ul className="fade-in--stagger">
-                  <li className="fade-in"><strong>Engineered interactive interfaces</strong> using XHTML, HTML5, and jQuery and built production-ready assets for ASP.NET backend integration.</li>
-                  <li className="fade-in"><strong>Implemented modular CSS architectures</strong> using LESS and CSS3 frameworks to ensure site scalability.</li>
-                  <li className="fade-in">Optimized web multimedia and <strong>managed cross-browser testing</strong> in an Agile environment.</li>
+                  <li className="fade-in">Designed and built interactive website interfaces for an ASP.NET licensing platform using XHTML, HTML5, and jQuery, and worked with backend developers on integration.</li>
+                  <li className="fade-in">Checked websites across browsers while working on multiple projects in an Agile team.</li>
                 </ul>
               </div>
 
               <div>
                 <h5 className="fade-in">XHTML/CSS Web Designer</h5>
+                <p className="fade-in"><em>2008</em></p>
                 <p className="fade-in">
-                  <em>2008</em><br />
-                  <span>Pere Partnership:</span> Partnered with designers/developers to translate PHP mockups into pixel-perfect XHTML/CSS and refactored legacy code for performance.
+                  <span>Pere Partnership</span>
                 </p>
+                <ul className="fade-in--stagger">
+                  <li className="fade-in">Worked with designers and developers to turn PHP mockups into XHTML/CSS pages that matched the designs. Updated older code to improve performance.</li>
+                </ul>
               </div>
 
               <div>
                 <h5 className="fade-in">Web Assets Producer (Consultant; Contractual)</h5>
+                <p className="fade-in"><em>2007 – 2008</em></p>
                 <p className="fade-in">
-                  <em>2007 – 2008</em><br />
-                  <span>WebMD:</span> Built pixel-perfect promo sites and HTML emails from Photoshop using XHTML, CSS, and JS; integrated third-party Flash assets and performed extensive QA.
+                  <span>WebMD</span>
                 </p>
+                <ul className="fade-in--stagger">
+                  <li className="fade-in">Built promotional websites and HTML emails from Photoshop designs using XHTML, CSS, and JavaScript. Added third-party Flash assets and tested the finished work.</li>
+                </ul>
               </div>
 
               <div>
                 <h5 className="fade-in">Associate Producer</h5>
+                <p className="fade-in"><em>2006 – 2007</em></p>
                 <p className="fade-in">
-                  <em>2006 – 2007</em><br />
-                  <span>WebMD:</span> Built promotional sites using XHTML/CSS and Photoshop; developed a regular-expression-based code library to streamline team workflows and managed CMS publishing.
+                  <span>WebMD</span>
                 </p>
+                <ul className="fade-in--stagger">
+                  <li className="fade-in">Built promotional websites using XHTML/CSS and Photoshop and managed CMS publishing.</li>
+                  <li className="fade-in">Created a reusable code library using regular expressions (RegEx) to make the team's work easier.</li>
+                </ul>
               </div>
             </div>
           </section>
