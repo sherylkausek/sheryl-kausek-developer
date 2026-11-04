@@ -73,16 +73,16 @@ function IndexPage() {
                 <h3 className="fade-in fade-in--on-load">Core competencies</h3>
                 <ul className="fade-in--stagger">
                   <li className="fade-in fade-in--on-load">
-                    <span>AEM Content Authoring & CMS Operations:</span> Creating and maintaining enterprise web pages using Adobe Experience Manager (AEM Sites); managing multilingual content; hands-on experience with AEM Edge Delivery Services
+                    <span>AEM Content Authoring & CMS Management:</span> Creating, updating, and maintaining enterprise websites in Adobe Experience Manager (AEM Sites), managing multilingual content, and working with AEM Edge Delivery Services (EDS)
                   </li>
                   <li className="fade-in">
-                    <span>Figma-to-AEM Implementation:</span> Translating Figma designs into AEM pages using existing components; supporting design-to-UI implementation
+                    <span>Figma Design Implementation:</span> Turning Figma designs into responsive AEM pages using existing components and templates
                   </li>
                   <li className="fade-in">
-                    <span>Release Management &amp; Responsive QA:</span> Content publishing, phased releases, code review, deployment workflows, and responsive QA
+                    <span>Publishing, Releases &amp; Quality Assurance:</span> Managing content publishing, coordinating releases, reviewing code changes, and testing pages across devices and screen sizes
                   </li>
                   <li className="fade-in">
-                    <span>Documentation, Workflow &amp; Accessibility:</span> Creating and updating AEM authoring and publishing guides, technical documentation, Jira/Airtable workflows, technical SEO structure, and WCAG accessibility
+                    <span>Documentation, Workflows &amp; Accessibility:</span> Writing authoring guides and technical documentation, tracking work in Jira and Airtable, and following SEO and WCAG accessibility best practices
                   </li>
                 </ul>
               </div>
@@ -126,35 +126,29 @@ function IndexPage() {
               </div>
               <div className="two-cols">
                 <p className="fade-in">
-                  Recently launched a WordPress site for a client.
+                  Designed, developed, and launched a custom WordPress website for a client.
                 </p><br/>
                 <p className="fade-in">
                   <strong>Live site:</strong> <a href="https://davidkausek.com" target="_blank" rel="noopener noreferrer">https://davidkausek.com</a>
                 </p>
                 <ul className="fade-in--stagger">
                   <li className="fade-in" style={{ '--fade-delay': '0.1s' }}>
-                    Created a custom block theme
+                    Built a custom WordPress block theme with reusable page templates and patterns
                   </li>
                   <li className="fade-in">
-                    Built page templates
+                    Created a consistent design system for typography, colors, and page layouts
                   </li>
                   <li className="fade-in">
-                    Developed reusable block patterns
+                    Wrote custom CSS to ensure pages display correctly across screen sizes
                   </li>
                   <li className="fade-in">
-                    Configured global styles (typography, color system, block styling)
+                    Selected and configured plugins to support site functionality
                   </li>
                   <li className="fade-in">
-                    Wrote custom CSS for responsive behavior and edge cases
+                    Organized site content and navigation to make information easy to find
                   </li>
                   <li className="fade-in">
-                    Selected, evaluated, and configured plugins
-                  </li>
-                  <li className="fade-in">
-                    Planned information architecture and user flows
-                  </li>
-                  <li className="fade-in">
-                    Delivered the site from concept through launch
+                    Managed the project from initial concept through launch
                   </li>
                 </ul>
               </div>
